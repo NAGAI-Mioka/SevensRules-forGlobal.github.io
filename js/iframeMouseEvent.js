@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".iframe_main").iframeTracker({
+    $(".iframe_child").iframeTracker({
         blurCallback: function (event) {
             //var src = $(this).attr("src");
             //alert("iframe click!");
