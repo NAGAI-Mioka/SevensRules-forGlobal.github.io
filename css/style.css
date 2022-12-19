@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.iframe_child {
+    width: 600px;
+    height: 400px;
+    transform-origin: top left;
+    transform: scale(0.5);
+    margin-right: -300px;
+    margin-bottom: -200px;
+}
+
+.iframe_over {
+    border: 5px solid red;
+}
+
+.iframe_out {
+    border: 5px solid grey;
+}
