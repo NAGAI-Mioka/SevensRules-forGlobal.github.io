@@ -1,10 +1,9 @@
+// iframe属性をクリックすると、インライン表示されているページに飛ぶ
+// マウスオーバー、マウスアウト時のCSSを変更する
+
 $(document).ready(function () {
     $(".iframe_child").iframeTracker({
         blurCallback: function (event) {
-            //var src = $(this).attr("src");
-            //alert("iframe click!");
-            //console.log(src);
-            console.log($(this._overElement).attr("src"));
             window.location.href = $(this._overElement).attr("src");
         },
         overCallback: function (element, event) {
