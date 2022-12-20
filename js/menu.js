@@ -9,4 +9,7 @@ $(document).ready(function () {
         var rep = url.replace(str, "index.html");
         window.location.href = rep;
     });
+    $(".button_top").on("click", function () {
+        window.location.href = "https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/index.html";
+    });
 });
