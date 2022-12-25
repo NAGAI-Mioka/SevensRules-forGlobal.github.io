@@ -1,10 +1,22 @@
 @charset "UTF-8";
 
-#div_full {
-    width: 100%;
+html, body {
     height: 100%;
-    display:grid;
-    grid-template-rows: minmax(100px, auto) 1fr;
+    margin: 0;
+}
+
+#div_full {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#div_menu {
+    height: 100px;
+}
+
+#div_contents {
+    flex-grow: 1;
 }
 
 .iframe_main {
