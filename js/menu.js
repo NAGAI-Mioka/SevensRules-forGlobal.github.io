@@ -6,7 +6,7 @@ $(document).ready(function () {
         var url = window.location.href;
         var ary = url.split("/");
         var str = ary[ary.length - 2] + "/" + ary[ary.length - 1];
-        var rep = url.replace(str, "index.html");
+        var rep = url.replace(str, "contents.html");
         window.location.href = rep;
     });
     $(".button_top").on("click", function () {
