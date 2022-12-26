@@ -52,6 +52,10 @@ html, body {
     background-color: lightskyblue;
 }
 
+.menu_a_open_parent {
+    background-color: steelblue;
+}
+
 .menu_a_close {
     background-color: lightcoral;
 }

@@ -21,8 +21,11 @@ $(document).ready(function () {
         $(".ul_menuBar a").each(function (i, elem) {
             if ($(elem).attr("href") === iframe_main.contentWindow.location.href) {
                 $(elem).removeClass("menu_a_close").addClass("menu_a_open");
+                $(elem).parents().find("a").each(function (i2, elem2) {
+                    $(elem).removeClass("menu_a_close").addClass("menu_a_open_parent");
+                })
             } else {
-                $(elem).removeClass("menu_a_open").addClass("menu_a_close");
+                $(elem).removeClass("menu_a_open menu_a_open_parent").addClass("menu_a_close");
             }
         });
     });
