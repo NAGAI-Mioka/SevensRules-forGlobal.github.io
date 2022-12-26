@@ -38,6 +38,8 @@ html, body {
     list-style-type: none;
     display: inline-block;
     position: relative;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
 }
 
 .ul_menuBar a {
