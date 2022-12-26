@@ -30,26 +30,31 @@ $(document).ready(function () {
                 $(elem).parent().removeClass("menu_li_open menu_li_open_parent").addClass("menu_li_close");
             }
         });
+        /*
         $(".ul_menuBar > li").each(function () {
             $(this).find(".menu_li_close").hide();
             $(this).find(".menu_li_close").parent().hide();
             $(this).find(".menu_li_open , .menu_li_open_parent").show();
             $(this).find(".menu_li_open , .menu_li_open_parent").parent().show();
         });
+        */
     });
 
-    $(".ul_menuBar li").on("mouseenter", function () {
+    $(".ul_menuBar li").on("click", function () {
         $(this).siblings().find("ul").hide(); // 兄弟liの子孫にいるulを全て非表示にする
+        $(this).children().children().show();
         $(this).children().slideDown(150); // 自分の直下の子ulを表示する（スライド）
     });
-    $(".ul_menuBar").on("mouseleave", function () {
+    $(".div_full").on("click", function () {
         //$(".ul_menuBar ul").slideUp(150);
         $(this).find("ul").slideUp(150); // 2列目以降の全てのulを非表示にする（スライド）
+        /*
         $(".ul_menuBar > li").each(function () {
             $(this).find(".menu_li_close").hide();
             $(this).find(".menu_li_close").parent().hide();
             $(this).find(".menu_li_open , .menu_li_open_parent").show();
             $(this).find(".menu_li_open , .menu_li_open_parent").parent().show();
         });
+        */
     });
 });
