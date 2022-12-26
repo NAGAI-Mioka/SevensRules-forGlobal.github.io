@@ -22,7 +22,7 @@ html, body {
 #iframe_main {
     width: 100%;
     height: 100%;
-    border: 1px solid grey;
+    border-top: 1px solid grey;
 }
 
 .ul_menuBar {
@@ -48,7 +48,7 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     display: block;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .ul_menuBar a:hover {
