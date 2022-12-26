@@ -24,7 +24,7 @@ $(document).ready(function () {
                 var parentUl = $(elem).closest("ul");
                 while (!$(parentUl).hasClass("ul_menuBar")) {
                     $(parentUl).siblings("a").removeClass("menu_a_close").addClass("menu_a_open_parent");
-                    parentUl = $(parentUl).closest("ul");
+                    parentUl = $(parentUl).parents("ul");
                 }
             } else {
                 $(elem).removeClass("menu_a_open menu_a_open_parent").addClass("menu_a_close");
