@@ -30,10 +30,12 @@ $(document).ready(function () {
                 $(elem).parent().removeClass("menu_li_open menu_li_open_parent").addClass("menu_li_close");
             }
         });
-        $(".menu_li_open , .menu_li_open_parent").show();
-        $(".menu_li_open , .menu_li_open_parent").parent().show();
-        $(".menu_li_close").hide();
-        $(".menu_li_close").parent().hide();
+        $(".ul_menuBar > li").each(function () {
+            $(this).find(".menu_li_open , .menu_li_open_parent").show();
+            $(this).find(".menu_li_open , .menu_li_open_parent").parent().show();
+            $(this).find(".menu_li_close").hide();
+            $(this).find(".menu_li_close").parent().hide();
+        });
     });
 
     $(".ul_menuBar li").on("mouseenter", function () {
