@@ -38,8 +38,6 @@ html, body {
     list-style-type: none;
     display: inline-block;
     position: relative;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
 }
 
 .ul_menuBar a {
@@ -63,6 +61,13 @@ html, body {
     padding: 0;
     position: absolute;
     display: none;
+}
+
+.ul_menuBar > li {
+    border-left: 1px solid white;
+}
+.ul_menuBar > li:last-child {
+    border-right: 1px solid white;
 }
 
 .ul_menuBar li li {
