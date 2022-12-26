@@ -3,7 +3,7 @@
 
 // DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
 window.addEventListener("DOMContentLoaded", () => {
-    var ifch = document.getElementsByClassName(".iframe_child");
+    var ifch = document.getElementsByClassName("iframe_child");
     for (var i = 0; i < ifch.length; i++) {
         console.log(i);
         ifch[i].contentWindow.contentWindow.addEventListener("click", () => {
