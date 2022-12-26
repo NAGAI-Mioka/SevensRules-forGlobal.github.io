@@ -18,7 +18,6 @@ $(document).ready(function () {
     });
 
     $(iframe_main).on("load", function () {
-        $(".iframe_child").css("pointer_events", "auto");
         $(".ul_menuBar a").each(function (i, elem) {
             if ($(elem).attr("href") === iframe_main.contentWindow.location.href) {
                 $(elem).parent().removeClass("menu_li_close menu_li_open_parent").addClass("menu_li_open");
