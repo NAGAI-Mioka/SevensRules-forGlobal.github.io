@@ -6,9 +6,19 @@ window.addEventListener("DOMContentLoaded", () => {
     var ifch = document.getElementsByClassName("iframe_child");
     for (var i = 0; i < ifch.length; i++) {
         console.log(i);
-        ifch[i].contentWindow.addEventListener("click", () => {
+        ifch[i].contentWindow.addEventListener("click", function (e) {
             console.log("clicked!");
             alert("clickを検知しました");
+        });
+        ifch[i].contentWindow.addEventListener("mouseenter", function (e) {
+            console.log("clicked!");
+            alert("clickを検知しました");
+            $(e.target).removeClass("iframe_out").addClass("iframe_over");
+        });
+        ifch[i].contentWindow.addEventListener("mouseleave", function (e) {
+            console.log("clicked!");
+            alert("clickを検知しました");
+            $(e.target).removeClass("iframe_over").addClass("iframe_out");
         });
     }
 });
@@ -33,6 +43,7 @@ window.addEventListener("beforeunload", function (e) {
 
 
 $(document).ready(function () {
+    /*
     $(".iframe_child").iframeTracker({
         blurCallback: function (event) {
             //window.location.href = $(this._overElement).attr("src");
@@ -52,6 +63,7 @@ $(document).ready(function () {
         },
         _overElement: null
     });
+    */
 
     /*
     $(iframe_main).on("load", function () {
