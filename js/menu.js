@@ -22,7 +22,7 @@ $(document).ready(function () {
             if ($(elem).attr("href") === iframe_main.contentWindow.location.href) {
                 $(elem).removeClass("menu_a_close").addClass("menu_a_open");
                 var parent = $(elem).parent();
-                while (!parent.classList.contains("section")) {
+                while (!$(parent).hasClass("section")) {
                     if (parent.tagName === "A") {
                         $(parent).removeClass("menu_a_close").addClass("menu_a_open_parent")
                     }
