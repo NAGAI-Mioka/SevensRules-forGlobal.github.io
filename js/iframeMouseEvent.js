@@ -2,24 +2,25 @@
 // マウスオーバー、マウスアウト時のCSSを変更する
 
 // DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
-
-window.addEventListener("DOMContentLoaded", () => {
-    var ifch = document.getElementsByClassName("iframe_child");
-    for (var i = 0; i < ifch.length; i++) {
-        console.log(i);
-        ifch[i].contentWindow.addEventListener("click", function (e) {
-            console.log("clicked!");
-            console.log($(e.target).attr("scr"));
-        });
-        ifch[i].contentWindow.addEventListener("mouseover", function (e) {
-            console.log("over!");
-            $(e.target).removeClass("iframe_out").addClass("iframe_over");
-        });
-        ifch[i].contentWindow.addEventListener("mouseout", function (e) {
-            console.log("out!");
-            $(e.target).removeClass("iframe_over").addClass("iframe_out");
-        });
-    }
+$(document).ready(function () {
+    window.addEventListener("DOMContentLoaded", () => {
+        var ifch = document.getElementsByClassName("iframe_child");
+        for (var i = 0; i < ifch.length; i++) {
+            console.log(i);
+            ifch[i].contentWindow.addEventListener("click", function (e) {
+                console.log("clicked!");
+                console.log($(e.target).attr("scr"));
+            });
+            ifch[i].contentWindow.addEventListener("mouseover", function (e) {
+                console.log("over!");
+                $(e.target).removeClass("iframe_out").addClass("iframe_over");
+            });
+            ifch[i].contentWindow.addEventListener("mouseout", function (e) {
+                console.log("out!");
+                $(e.target).removeClass("iframe_over").addClass("iframe_out");
+            });
+        }
+    });
 });
 
 /*
@@ -40,7 +41,7 @@ window.addEventListener("beforeunload", function (e) {
 });
 */
 
-
+/*
 $(document).ready(function () {
 
     /*
@@ -65,12 +66,14 @@ $(document).ready(function () {
     });
     */
 
-    /*
-    $(iframe_main).on("load", function () {
+/*
+$(iframe_main).on("load", function () {
 
-    });
-    $(iframe_main).on("beforeunload", function () {
-        $(".iframe_child").css("pointer-events", "none");
-    });
-    */
 });
+$(iframe_main).on("beforeunload", function () {
+    $(".iframe_child").css("pointer-events", "none");
+});
+ 
+});
+
+*/
