@@ -36,7 +36,9 @@ $(document).ready(function () {
         $(this).siblings().find("ul").hide();
         $(this).children().slideDown(150);
     });
-    $("html").on("click", function () {
-        $(".ul_menuBar ul").slideUp(150);
+    $(document).on("click", function (e) {
+        if (!$(e.target).closest(".ul_menuBar").length) {
+            $(".ul_menuBar ul").slideUp(150);
+        }
     });
 });
