@@ -19,7 +19,6 @@ $(document).ready(function () {
 
     $(iframe_main).on("load", function () {
         $(".ul_menuBar a").each(function (i, elem) {
-            console.log($(elem).attr("href"));
             if ($(elem).attr("href") === iframe_main.contentWindow.location.href) {
                 $(elem).removeClass("menu_a_close").addClass("menu_a_open");
             } else {
