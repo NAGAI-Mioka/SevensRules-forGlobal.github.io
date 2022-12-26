@@ -1,4 +1,4 @@
-var iframe_main = document.getElementsById("iframe_main");
+var iframe_main = document.getElementById("iframe_main");
 
 $(document).ready(function () {
     $(".button_back").on("click", function () {
@@ -10,7 +10,7 @@ $(document).ready(function () {
             var ary = url.split("/");
             var str = ary[ary.length - 2] + "/" + ary[ary.length - 1];
             var rep = url.replace(str, "contents.html");
-            window.location.href = rep;
+            iframe_main.contentWindow.location.href = rep;
         }
     });
     $(".button_top").on("click", function () {
