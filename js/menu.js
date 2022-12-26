@@ -20,10 +20,10 @@ $(document).ready(function () {
     $(iframe_main).on("load", function () {
         $(".ul_menuBar a").each(function (i, elem) {
             if ($(elem).attr("href") === iframe_main.contentWindow.location.href) {
-                $(elem).removeClass("menu_a_close").addClass("menu_a_open");
+                $(elem).removeClass("menu_a_close menu_a_open_parent").addClass("menu_a_open");
                 var parentUl = $(elem).closest("ul");
                 while (!$(parentUl).hasClass("ul_menuBar")) {
-                    $(parentUl).siblings("a").removeClass("menu_a_close").addClass("menu_a_open_parent");
+                    $(parentUl).siblings("a").removeClass("menu_a_close menu_a_open").addClass("menu_a_open_parent");
                     parentUl = $(parentUl).parents("ul");
                 }
             } else {
