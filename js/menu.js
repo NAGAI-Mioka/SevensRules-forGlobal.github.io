@@ -50,8 +50,9 @@ $(document).ready(function () {
             // メニューバーをクリックしたら
         } else {
             // メニューバー以外をクリックしたら
-            $(".ul_menuBar").find("ul").slideUp(150);
-            $(".ul_menuBar li li.menu_li_close").hide();
+            $(".ul_menuBar").find("ul").slideUp(150, function () {
+                $(".ul_menuBar li li.menu_li_close").hide();
+            });
             $(".ul_menuBar li li.menu_li_open_parent").show();
             $(".ul_menuBar li li.menu_li_open").show();
             $(".ul_menuBar li li.menu_li_open_parent").parent().slideDown(150);
