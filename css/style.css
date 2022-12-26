@@ -19,7 +19,7 @@ html, body {
     flex-grow: 1;
 }
 
-.iframe_main {
+#iframe_main {
     width: 100%;
     height: 100%;
 }
