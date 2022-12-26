@@ -33,10 +33,12 @@ $(document).ready(function () {
         },
         overCallback: function (element, event) {
             this._overElement = $(element);
+            console.log("over!");
             $(element).removeClass("iframe_out").addClass("iframe_over");
         },
         outCallback: function (element, event) {
             this._overElement = null;
+            console.log("out!");
             $(element).removeClass("iframe_over").addClass("iframe_out");
         },
         _overElement: null
