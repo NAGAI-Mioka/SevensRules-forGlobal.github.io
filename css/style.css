@@ -26,7 +26,7 @@ html, body {
 
 .ul_menuBar {
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 0 0 15px 15px;
     display: flex;
     background-color: lightcoral;
 }
@@ -36,6 +36,40 @@ html, body {
     display: inline-block;
     list-style-type: none;
     position: relative;
+    text-align: center;
+}
+
+.ul_menuBar a {
+    background-color: lightcoral;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display:block;
+}
+
+.ul_menuBar a:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.ul_menuBar li:hover > ul {
+    display:block;
+}
+
+.ul_menuBar ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position:absolute;
+}
+
+.ul_menuBar ul ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    left: 100%;
 }
 
 .iframe_child {
