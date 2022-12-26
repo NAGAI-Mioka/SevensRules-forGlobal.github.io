@@ -3,10 +3,10 @@
 
 // DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
 window.addEventListener("DOMContentLoaded", () => {
-    const iframeElement = document.querySelector("iframe");
+    const iframeElement = document.querySelector(".iframe_child");
     iframeElement.contentWindow.addEventListener("click", () => {
         alert("clickを検知しました");
-    })
+    });
 });
 
 /*
