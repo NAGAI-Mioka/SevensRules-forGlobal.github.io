@@ -43,20 +43,19 @@ $(document).ready(function () {
     $(".ul_menuBar li").on("click", function () {
         $(this).siblings().find("ul").hide(); // 兄弟liの子孫にいるulを全て非表示にする
         $(this).children().children().show();
-        $(this).children().slideDown(150); // 自分の直下の子ulを表示する（スライド）
+        $(this).children().show(); // 自分の直下の子ulを表示する（スライド）
     });
     $(document).on("click", function (e) {
         if ($(e.target).closest(".ul_menuBar").length) {
             // メニューバーをクリックしたら
         } else {
             // メニューバー以外をクリックしたら
-            $(".ul_menuBar").find("ul").slideUp(150, function () {
-                $(".ul_menuBar li li.menu_li_close").hide();
-            });
+            $(".ul_menuBar").find("ul").hide();
+            $(".ul_menuBar li li.menu_li_close").hide();
             $(".ul_menuBar li li.menu_li_open_parent").show();
             $(".ul_menuBar li li.menu_li_open").show();
-            $(".ul_menuBar li li.menu_li_open_parent").parent().slideDown(150);
-            $(".ul_menuBar li li.menu_li_open").parent().slideDown(150);
+            $(".ul_menuBar li li.menu_li_open_parent").parent().show();
+            $(".ul_menuBar li li.menu_li_open").parent().show();
         }
     });
     /*
