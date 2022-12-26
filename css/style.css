@@ -74,25 +74,25 @@ html, body {
 .ul_menuBar li.has_child::before {
     content: '';
     position: absolute;
-    left: 15px;
-    top: 25px;
+    left: 5px;
+    top: 50%;
     width: 6px;
     height: 6px;
     border-top: 2px solid white;
     border-right: 2px solid white;
-    transform: rotate(135deg);
+    transform: translateY(-50%) rotate(135deg);
 }
 
 .ul_menuBar li li.has_child::before {
     content: '';
     position: absolute;
-    left: 6px;
-    top: 17px;
+    left: 5px;
+    top: 50%;
     width: 6px;
     height: 6px;
     border-top: 2px solid white;
     border-right: 2px solid white;
-    transform: rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .menu_a_open {
