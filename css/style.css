@@ -71,6 +71,30 @@ html, body {
     border-left: 1px solid white;
 }
 
+.ul_menuBar li.has_child::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(135deg);
+}
+
+.ul_menuBar li li.has_child::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 17px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+}
+
 .menu_a_open {
     background-color: lightskyblue;
 }
