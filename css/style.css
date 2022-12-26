@@ -33,7 +33,6 @@ html, body {
 
 .ul_menuBar li {
     width: 100%;
-    border: 1px solid white;
     display: inline-block;
     list-style-type: none;
     position: relative;
@@ -48,6 +47,14 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     display:block;
+}
+
+.menu_a_open {
+    background-color: lightskyblue;
+}
+
+.menu_a_close {
+    background-color: lightcoral;
 }
 
 .ul_menuBar a:hover {
