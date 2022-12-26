@@ -33,10 +33,11 @@ $(document).ready(function () {
     });
 
     $(".ul_menuBar li").on("mouseenter", function () {
-        $(this).siblings().find("ul").hide();
-        $(this).children().slideDown(150);
+        $(this).siblings().find("ul").hide(); // 兄弟liの子孫にいるulを全て非表示にする
+        $(this).children().slideDown(150); // 自分の直下の子ulを表示する（スライド）
     });
     $(".ul_menuBar").on("mouseleave", function () {
-        $(".ul_menuBar ul").slideUp(150);
+        //$(".ul_menuBar ul").slideUp(150);
+        $(this).find("ul").slideUp(150); // 2列目以降の全てのulを非表示にする（スライド）
     });
 });
