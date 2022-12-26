@@ -45,6 +45,12 @@ $(document).ready(function () {
         $(this).children().children().show();
         $(this).children().slideDown(150); // 自分の直下の子ulを表示する（スライド）
     });
+    $(document).on("click", function (e) {
+        if (!$(e.target).closest(".ul_menuBar").length) {
+            $(".ul_menuBar").find("ul").slideUp(150);
+        }
+    });
+    /*
     $(".div_full").on("click", function () {
         //$(".ul_menuBar ul").slideUp(150);
         $(".ul_menuBar").find("ul").slideUp(150); // 2列目以降の全てのulを非表示にする（スライド）
@@ -55,6 +61,7 @@ $(document).ready(function () {
             $(this).find(".menu_li_open , .menu_li_open_parent").show();
             $(this).find(".menu_li_open , .menu_li_open_parent").parent().show();
         });
-        */
+        *
     });
+    */
 });
