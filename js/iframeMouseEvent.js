@@ -19,12 +19,17 @@ window.addEventListener("beforeunload", function (e) {
 });
 */
 
+
 $(document).ready(function () {
     $(".iframe_child").iframeTracker({
         blurCallback: function (event) {
-            window.location.href = $(this._overElement).attr("src");
+            //window.location.href = $(this._overElement).attr("src");
             console.log($(this._overElement).attr("src"));
-            $(this._overElement).iframeTracker(null);
+            $(this._overElement).on("click", function () {
+                window.location.href = $(this._overElement).attr("src");
+                console.log("click!");
+            });
+            //$(this._overElement).iframeTracker(null);
         },
         overCallback: function (element, event) {
             this._overElement = $(element);
