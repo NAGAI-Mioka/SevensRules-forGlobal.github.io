@@ -31,6 +31,7 @@ $(document).ready(function () {
         },
         overCallback: function (element, event) {
             this._overElement = $(element);
+            this._is_out = true;
             console.log("over!");
             $(element).removeClass("iframe_out").addClass("iframe_over");
         },
