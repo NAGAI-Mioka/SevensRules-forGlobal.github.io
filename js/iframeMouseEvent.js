@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     var ifch = document.getElementsByClassName("iframe_child");
     for (var i = 0; i < ifch.length; i++) {
         console.log(i);
-        ifch[i].contentWindow.contentWindow.addEventListener("click", () => {
+        ifch[i].contentWindow.addEventListener("click", () => {
             console.log("clicked!");
             alert("clickを検知しました");
         });
