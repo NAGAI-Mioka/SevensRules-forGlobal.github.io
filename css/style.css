@@ -64,6 +64,10 @@ html, body {
     position:absolute;
 }
 
+.ul_menuBar ul li {
+    width: 100%;
+}
+
 .ul_menuBar ul ul {
     margin: 0;
     padding: 0;
