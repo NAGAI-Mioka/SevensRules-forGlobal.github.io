@@ -2,26 +2,26 @@
 // マウスオーバー、マウスアウト時のCSSを変更する
 
 // DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
-$(document).ready(function () {
-    window.addEventListener("DOMContentLoaded", () => {
-        var ifch = document.getElementsByClassName("iframe_child");
-        for (var i = 0; i < ifch.length; i++) {
-            console.log(i);
-            ifch[i].contentWindow.addEventListener("click", function (e) {
-                console.log("clicked!");
-                console.log($(e.target).attr("scr"));
-            });
-            ifch[i].contentWindow.addEventListener("mouseover", function (e) {
-                console.log("over!");
-                $(e.target).removeClass("iframe_out").addClass("iframe_over");
-            });
-            ifch[i].contentWindow.addEventListener("mouseout", function (e) {
-                console.log("out!");
-                $(e.target).removeClass("iframe_over").addClass("iframe_out");
-            });
-        }
-    });
+
+window.addEventListener("DOMContentLoaded", () => {
+    var ifch = document.getElementsByClassName("iframe_child");
+    for (var i = 0; i < ifch.length; i++) {
+        console.log(i);
+        ifch[i].contentWindow.addEventListener("click", function (e) {
+            console.log("clicked!");
+            console.log($(e.target));
+        });
+        ifch[i].contentWindow.addEventListener("mouseover", function (e) {
+            console.log("over!");
+            ifch[i].removeClass("iframe_out").addClass("iframe_over");
+        });
+        ifch[i].contentWindow.addEventListener("mouseout", function (e) {
+            console.log("out!");
+            ifch[i].removeClass("iframe_over").addClass("iframe_out");
+        });
+    }
 });
+
 
 /*
 window.addEventListener("unload", function (e) {
