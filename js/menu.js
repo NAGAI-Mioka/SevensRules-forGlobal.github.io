@@ -21,12 +21,10 @@ $(document).ready(function () {
         $(".ul_menuBar a").each(function (i, elem) {
             if ($(elem).attr("href") === iframe_main.contentWindow.location.href) {
                 $(elem).removeClass("menu_a_close").addClass("menu_a_open");
-                var parent = $(elem).parent();
-                while (!$(parent).hasClass("section")) {
-                    if (parent.tagName === "A") {
-                        $(parent).removeClass("menu_a_close").addClass("menu_a_open_parent")
-                    }
-                    parent = parent.parent();
+                var parentUl = $(elem).closest("ul");
+                while (!$(parentUl).hasClass("ul_menuBar")) {
+                    $(parentUl).sibilings("a").removeClass("menu_a_close").addClass("menu_a_open_parent")
+                    parentUl = $(parentUl).closest("ul");
                 }
             } else {
                 $(elem).removeClass("menu_a_open menu_a_open_parent").addClass("menu_a_close");
