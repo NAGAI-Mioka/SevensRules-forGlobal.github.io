@@ -24,6 +24,7 @@ $(document).ready(function () {
         blurCallback: function (event) {
             window.location.href = $(this._overElement).attr("src");
             console.log($(this._overElement).attr("src"));
+            $(this._overElement).iframeTracker(null);
         },
         overCallback: function (element, event) {
             this._overElement = $(element);
