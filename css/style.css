@@ -47,7 +47,6 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     display: block;
-    background-color: lightcoral;
 }
 
 .ul_menuBar a:hover {
@@ -78,6 +77,10 @@ html, body {
 
 .menu_a_open_parent {
     background-color: steelblue;
+}
+
+.menu_a_close {
+    background-color: lightcoral;
 }
 
 .iframe_child {
