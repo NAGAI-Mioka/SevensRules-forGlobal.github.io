@@ -1,7 +1,21 @@
 // iframe属性をクリックすると、インライン表示されているページに飛ぶ
 // マウスオーバー、マウスアウト時のCSSを変更する
 
-var iframe_main = document.getElementById("iframe_main");
+window.addEventListener("unload", function (e) {
+    console.log("unload!");
+    var ifch = document.getElementsByClassName("iframe_child");
+    for (var i = 0; i < ifch.length; i++) {
+        ifch[i].style.pointerEvents = "auto";
+    }
+});
+
+window.addEventListener("beforeunload", function (e) {
+    console.log("before unload!");
+    var ifch = document.getElementsByClassName("iframe_child");
+    for (var i = 0; i < ifch.length; i++) {
+        ifch[i].style.pointerEvents = "none";
+    }
+});
 
 $(document).ready(function () {
     $(".iframe_child").iframeTracker({
@@ -19,10 +33,12 @@ $(document).ready(function () {
         _overElement: null
     });
 
+    /*
     $(iframe_main).on("load", function () {
-        $(".iframe_child").css("pointer-events", "auto");
+
     });
     $(iframe_main).on("beforeunload", function () {
         $(".iframe_child").css("pointer-events", "none");
     });
+    */
 });

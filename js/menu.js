@@ -30,14 +30,6 @@ $(document).ready(function () {
                 $(elem).parent().removeClass("menu_li_open menu_li_open_parent").addClass("menu_li_close");
             }
         });
-        /*
-        $(".ul_menuBar > li").each(function () {
-            $(this).find(".menu_li_close").hide();
-            $(this).find(".menu_li_close").parent().hide();
-            $(this).find(".menu_li_open , .menu_li_open_parent").show();
-            $(this).find(".menu_li_open , .menu_li_open_parent").parent().show();
-        });
-        */
     });
 
     $(".ul_menuBar li").on("click", function () {
@@ -60,18 +52,4 @@ $(document).ready(function () {
             $(".ul_menuBar li li.menu_li_open").parent().show();
         }
     });
-    /*
-    $(".div_full").on("click", function () {
-        //$(".ul_menuBar ul").slideUp(150);
-        $(".ul_menuBar").find("ul").slideUp(150); // 2列目以降の全てのulを非表示にする（スライド）
-        /*
-        $(".ul_menuBar > li").each(function () {
-            $(this).find(".menu_li_close").hide();
-            $(this).find(".menu_li_close").parent().hide();
-            $(this).find(".menu_li_open , .menu_li_open_parent").show();
-            $(this).find(".menu_li_open , .menu_li_open_parent").parent().show();
-        });
-        *
-    });
-    */
 });
