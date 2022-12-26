@@ -18,7 +18,6 @@ $(document).ready(function () {
     });
 
     $(iframe_main).on("load", function () {
-        $(".ul_menuBar a").prop("disabled", true);
         $(".ul_menuBar a").each(function (i, elem) {
             if ($(elem).attr("href") === iframe_main.contentWindow.location.href) {
                 $(elem).parent().removeClass("menu_li_close menu_li_open_parent").addClass("menu_li_open");
@@ -49,10 +48,8 @@ $(document).ready(function () {
     $(document).on("click", function (e) {
         if ($(e.target).closest(".ul_menuBar").length) {
             // メニューバーをクリックしたら
-            $(".ul_menuBar a").prop("disabled", false);
         } else {
             // メニューバー以外をクリックしたら
-            $(".ul_menuBar a").prop("disabled", true);
             $(".ul_menuBar").find("ul").slideUp(150);
         }
     });
