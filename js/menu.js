@@ -41,6 +41,7 @@ $(document).ready(function () {
     });
 
     $(".ul_menuBar li").on("click", function () {
+        $(".ul_menuBar a").css("pointer-events", "auto");
         $(this).siblings().find("ul").hide(); // 兄弟liの子孫にいるulを全て非表示にする
         $(this).children().children().show();
         $(this).children().show(); // 自分の直下の子ulを表示する（スライド）
@@ -50,6 +51,7 @@ $(document).ready(function () {
             // メニューバーをクリックしたら
         } else {
             // メニューバー以外をクリックしたら
+            $(".ul_menuBar a").css("pointer-events", "none");
             $(".ul_menuBar").find("ul").hide();
             $(".ul_menuBar li li.menu_li_close").hide();
             $(".ul_menuBar li li.menu_li_open_parent").show();

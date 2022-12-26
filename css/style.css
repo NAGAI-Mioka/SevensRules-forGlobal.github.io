@@ -48,6 +48,7 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     display: block;
+    pointer-events: none;
 }
 
 .ul_menuBar a:hover {
