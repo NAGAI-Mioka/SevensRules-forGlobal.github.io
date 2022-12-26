@@ -13,11 +13,11 @@ window.addEventListener("DOMContentLoaded", () => {
         });
         ifch[i].contentWindow.addEventListener("mouseover", function (e) {
             console.log("over!");
-            ifch[i].removeClass("iframe_out").addClass("iframe_over");
+            $(ifch[i]).removeClass("iframe_out").addClass("iframe_over");
         });
         ifch[i].contentWindow.addEventListener("mouseout", function (e) {
             console.log("out!");
-            ifch[i].removeClass("iframe_over").addClass("iframe_out");
+            $(ifch[i]).removeClass("iframe_over").addClass("iframe_out");
         });
     }
 });
