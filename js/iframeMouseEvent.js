@@ -23,10 +23,9 @@ window.addEventListener("beforeunload", function (e) {
 $(document).ready(function () {
     $(".iframe_child").iframeTracker({
         blurCallback: function (event) {
-            if (_is_out) {
-                window.location.href = $(this._overElement).attr("src");
-                console.log($(this._overElement).attr("src"));
-            }
+            //window.location.href = $(this._overElement).attr("src");
+            console.log($(this._overElement).attr("src"));
+            console.log(event);
             //$(this._overElement).iframeTracker(null);
         },
         overCallback: function (element, event) {
@@ -41,8 +40,7 @@ $(document).ready(function () {
             console.log("out!");
             $(element).removeClass("iframe_over").addClass("iframe_out");
         },
-        _overElement: null,
-        _is_out: false
+        _overElement: null
     });
 
     /*
