@@ -24,6 +24,19 @@ html, body {
     height: 100%;
 }
 
+ul.ul_menuBar {
+    margin: 0;
+    padding: 0 0 0 0;
+    background-color: lightcoral;
+}
+
+ul.ul_menuBar li {
+    width: 125px;
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
 .iframe_child {
     width: 600px;
     height: 400px;
