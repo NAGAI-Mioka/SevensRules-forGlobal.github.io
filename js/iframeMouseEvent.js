@@ -16,16 +16,4 @@ $(document).ready(function () {
         },
         _overElement: null
     });
-
-    $("#iframe_main").iframeTracker({
-        blurCallback: function (event) {
-        },
-        overCallback: function (element, event) {
-            this._overElement = $(element);
-        },
-        outCallback: function (element, event) {
-            this._overElement = null;
-        },
-        _overElement: null
-    });
 });
