@@ -34,6 +34,7 @@ $(document).ready(function () {
 
     $(".ul_menuBar li").on("mouseenter", function () {
         $(this).siblings().find("ul").hide(); // 兄弟liの子孫にいるulを全て非表示にする
+        $(this).find("ul").hide();
         $(this).children().slideDown(150); // 自分の直下の子ulを表示する（スライド）
     });
     $(".ul_menuBar").on("mouseleave", function () {
