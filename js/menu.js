@@ -31,4 +31,12 @@ $(document).ready(function () {
             }
         });
     });
+
+    $(".ul_menuBar li").on("mouseenter", function () {
+        $(this).siblings().find("ul").hide();
+        $(this).children().slideDown(150);
+    });
+    $("html").on("click", function () {
+        $(".ul_menuBar ul").slideUp(150);
+    });
 });

@@ -65,10 +65,6 @@ html, body {
     color: white;
 }
 
-.ul_menuBar li:hover > ul {
-    display:block;
-}
-
 .ul_menuBar ul {
     margin: 0;
     padding: 0;
