@@ -44,7 +44,8 @@ window.addEventListener("beforeunload", function (e) {
 
 
 $(document).ready(function () {
-    $(".iframe_child").on("click", function (e) {
+    var ifch = document.getElementsByClassName("iframe_child");
+    $(ifch).on("click", function (e) {
         console.log("clicked!");
         console.log($(e.target).attr("src"));
     });
