@@ -1,6 +1,7 @@
 // iframe属性をクリックすると、インライン表示されているページに飛ぶ
 // マウスオーバー、マウスアウト時のCSSを変更する
 
+/*
 window.addEventListener("unload", function (e) {
     console.log("unload!");
     var ifch = document.getElementsByClassName("iframe_child");
@@ -16,11 +17,13 @@ window.addEventListener("beforeunload", function (e) {
         ifch[i].style.pointerEvents = "none";
     }
 });
+*/
 
 $(document).ready(function () {
     $(".iframe_child").iframeTracker({
         blurCallback: function (event) {
             window.location.href = $(this._overElement).attr("src");
+            console.log($(this._overElement).attr("src"));
         },
         overCallback: function (element, event) {
             this._overElement = $(element);
