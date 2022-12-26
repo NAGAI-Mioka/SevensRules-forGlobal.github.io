@@ -47,7 +47,7 @@ $(document).ready(function () {
     });
     $(".div_full").on("click", function () {
         //$(".ul_menuBar ul").slideUp(150);
-        $(this).find("ul").slideUp(150); // 2列目以降の全てのulを非表示にする（スライド）
+        $(".ul_menuBar").find("ul").slideUp(150); // 2列目以降の全てのulを非表示にする（スライド）
         /*
         $(".ul_menuBar > li").each(function () {
             $(this).find(".menu_li_close").hide();
