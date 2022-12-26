@@ -23,7 +23,7 @@ $(document).ready(function () {
                 $(elem).removeClass("menu_a_close").addClass("menu_a_open");
                 var parentUl = $(elem).closest("ul");
                 while (!$(parentUl).hasClass("ul_menuBar")) {
-                    $(parentUl).sibilings("a").removeClass("menu_a_close").addClass("menu_a_open_parent")
+                    $(parentUl).siblings("a").removeClass("menu_a_close").addClass("menu_a_open_parent");
                     parentUl = $(parentUl).closest("ul");
                 }
             } else {
