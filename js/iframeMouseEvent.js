@@ -5,7 +5,9 @@
 window.addEventListener("DOMContentLoaded", () => {
     var ifch = document.getElementsByClassName(".iframe_child");
     for (var i = 0; i < ifch.length; i++) {
+        console.log(i);
         ifch[i].contentWindow.contentWindow.addEventListener("click", () => {
+            console.log("clicked!");
             alert("clickを検知しました");
         });
     }
@@ -34,20 +36,18 @@ $(document).ready(function () {
     $(".iframe_child").iframeTracker({
         blurCallback: function (event) {
             //window.location.href = $(this._overElement).attr("src");
-            console.log($(this._overElement).attr("src"));
-            console.log(event);
+            //console.log($(this._overElement).attr("src"));
+            //console.log(event);
             //$(this._overElement).iframeTracker(null);
         },
         overCallback: function (element, event) {
             this._overElement = $(element);
-            this._is_out = true;
-            console.log("over!");
+            //console.log("over!");
             $(element).removeClass("iframe_out").addClass("iframe_over");
         },
         outCallback: function (element, event) {
             this._overElement = null;
-            this._is_out = true;
-            console.log("out!");
+            //console.log("out!");
             $(element).removeClass("iframe_over").addClass("iframe_out");
         },
         _overElement: null
