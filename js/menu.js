@@ -45,5 +45,11 @@ $(document).ready(function () {
     $(".ul_menuBar").on("mouseleave", function () {
         //$(".ul_menuBar ul").slideUp(150);
         $(this).find("ul").slideUp(150); // 2列目以降の全てのulを非表示にする（スライド）
+        $(".ul_menuBar > li").each(function () {
+            $(this).find(".menu_li_open , .menu_li_open_parent").show();
+            $(this).find(".menu_li_open , .menu_li_open_parent").parent().show();
+            $(this).find(".menu_li_close").hide();
+            $(this).find(".menu_li_close").parent().hide();
+        });
     });
 });
