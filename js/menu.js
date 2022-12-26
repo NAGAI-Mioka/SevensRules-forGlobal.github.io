@@ -20,17 +20,20 @@ $(document).ready(function () {
     $(iframe_main).on("load", function () {
         $(".ul_menuBar a").each(function (i, elem) {
             if ($(elem).attr("href") === iframe_main.contentWindow.location.href) {
-                $(elem).parent().removeClass("menu_a_close menu_a_open_parent").addClass("menu_a_open");
+                $(elem).parent().removeClass("menu_li_close menu_li_open_parent").addClass("menu_li_open");
                 var parentUl = $(elem).closest("ul");
                 while (!$(parentUl).hasClass("ul_menuBar")) {
-                    $(parentUl).parent().removeClass("menu_a_close menu_a_open").addClass("menu_a_open_parent");
+                    $(parentUl).parent().removeClass("menu_li_close menu_li_open").addClass("menu_li_open_parent");
                     parentUl = $(parentUl).parents("ul").first();
                 }
             } else {
-                $(elem).parent().removeClass("menu_a_open menu_a_open_parent").addClass("menu_a_close");
+                $(elem).parent().removeClass("menu_li_open menu_li_open_parent").addClass("menu_li_close");
             }
         });
-        $("")
+        $(".menu_li_open , .menu_li_open_parent").show();
+        $(".menu_li_open , .menu_li_open_parent").parent().show();
+        $(".menu_li_close").hide();
+        $(".menu_li_close").parent().hide();
     });
 
     $(".ul_menuBar li").on("mouseenter", function () {

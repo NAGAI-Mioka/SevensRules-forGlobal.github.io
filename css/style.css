@@ -95,15 +95,15 @@ html, body {
     transform: translateY(-50%) rotate(45deg);
 }
 
-.menu_a_open {
+.menu_li_open {
     background-color: lightskyblue;
 }
 
-.menu_a_open_parent {
+.menu_li_open_parent {
     background-color: steelblue;
 }
 
-.menu_a_close {
+.menu_li_close {
     background-color: lightcoral;
 }
 
