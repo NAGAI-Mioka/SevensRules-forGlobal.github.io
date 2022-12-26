@@ -12,7 +12,7 @@ html, body {
 }
 
 #div_menu {
-    height: 150px;
+    height: 120px;
 }
 
 #div_contents {
@@ -28,6 +28,7 @@ html, body {
 .ul_menuBar {
     margin: 0;
     padding: 0 15px 0 15px;
+    top: 50%;
     display: flex;
     background-color: lightcoral;
 }
