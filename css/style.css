@@ -116,6 +116,7 @@ html, body {
     transform: scale(0.5);
     margin-right: -300px;
     margin-bottom: -200px;
+    pointer-events: none;
 }
 
 .iframe_over {
