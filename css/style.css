@@ -26,7 +26,7 @@ html, body {
 
 .ul_menuBar {
     margin: 0;
-    padding: 0 0 15px 15px;
+    padding: 0 15px 0 15px;
     display: flex;
     background-color: lightcoral;
 }
