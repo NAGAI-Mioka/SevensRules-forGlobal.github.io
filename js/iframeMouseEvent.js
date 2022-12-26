@@ -1,6 +1,16 @@
 // iframe属性をクリックすると、インライン表示されているページに飛ぶ
 // マウスオーバー、マウスアウト時のCSSを変更する
 
+window.onload = function () {
+    // DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
+    window.addEventListener("DOMContentLoaded", () => {
+        const iframeElement = document.querySelector("iframe");
+        iframeElement.contentWindow.addEventListener("click", () => {
+            alert("clickを検知しました");
+        })
+    })
+};
+
 /*
 window.addEventListener("unload", function (e) {
     console.log("unload!");
