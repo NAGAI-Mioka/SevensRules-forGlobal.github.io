@@ -2,6 +2,7 @@
 // マウスオーバー、マウスアウト時のCSSを変更する
 
 // DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
+/*
 window.addEventListener("DOMContentLoaded", () => {
     var ifch = document.getElementsByClassName("iframe_child");
     for (var i = 0; i < ifch.length; i++) {
@@ -43,6 +44,10 @@ window.addEventListener("beforeunload", function (e) {
 
 
 $(document).ready(function () {
+    $(".iframe_child").on("click", function (e) {
+        console.log("clicked!");
+        console.log($(e.target).attr("src"));
+    });
     /*
     $(".iframe_child").iframeTracker({
         blurCallback: function (event) {
