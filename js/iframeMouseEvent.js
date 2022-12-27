@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
             //console.log("clicked!");
             console.log(overIframe);
             console.log($(overIframe).attr("src"));
-            if ($(overIframe).attr("src") != null && $(window).attr("name") === "iframe_main") {
+            if ($(overIframe).attr("src") != null && window.name === "iframe_main") {
                 console.log(window);
                 window.location.href = $(overIframe).attr("src");
             }
