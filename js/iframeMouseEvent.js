@@ -12,11 +12,11 @@ window.addEventListener("DOMContentLoaded", () => {
             console.log($(e.currentTarget).attr("scr"));
         });
         ifch[i].contentWindow.addEventListener("mouseover", (e) => {
-            console.log("over!");
+            console.log("over!" + e.currentTarget);
             $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
         });
         ifch[i].contentWindow.addEventListener("mouseout", (e) => {
-            console.log("out!");
+            console.log("out!" + e.currentTarget);
             $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
         });
     }
