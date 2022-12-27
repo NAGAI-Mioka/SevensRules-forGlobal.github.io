@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log(i);
         ifch[i].contentWindow.addEventListener("click", (e) => {
             //console.log("clicked!");
-            console.log($(overIframe).attr("scr"));
+            console.log(overIframe);
         });
         ifch[i].addEventListener("mouseover", (e) => {
             console.log("over!" + e.currentTarget);
