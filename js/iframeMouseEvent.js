@@ -13,6 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
             //console.log("clicked!");
             console.log(overIframe);
             console.log($(overIframe).attr("src"));
+            window.location.href = $(overIframe).attr("src");
         });
         ifch[i].addEventListener("mouseover", (e) => {
             console.log("over!" + e.currentTarget);
