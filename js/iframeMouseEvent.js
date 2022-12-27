@@ -9,15 +9,15 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log(i);
         ifch[i].contentWindow.addEventListener("click", function (e) {
             console.log("clicked!");
-            console.log($(e.target));
+            console.log($(e.currentTarget).attr("scr"));
         });
         ifch[i].contentWindow.addEventListener("mouseover", function (e) {
             console.log("over!");
-            $(ifch[i]).removeClass("iframe_out").addClass("iframe_over");
+            $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
         });
         ifch[i].contentWindow.addEventListener("mouseout", function (e) {
             console.log("out!");
-            $(ifch[i]).removeClass("iframe_over").addClass("iframe_out");
+            $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
         });
     }
 });
