@@ -7,6 +7,7 @@ var overIframe = null;
 
 window.addEventListener("DOMContentLoaded", () => {
     var iframe_main = document.getElementById("iframe_main");
+    console.log(iframe_main);
     var ifch = document.getElementsByClassName("iframe_child");
     for (var i = 0; i < ifch.length; i++) {
         console.log(i);
