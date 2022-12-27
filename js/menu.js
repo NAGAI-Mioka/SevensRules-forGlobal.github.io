@@ -30,6 +30,12 @@ $(document).ready(function () {
                 $(elem).parent().removeClass("menu_li_open menu_li_open_parent").addClass("menu_li_close");
             }
         });
+        $(".ul_menuBar").find("ul").hide();
+        $(".ul_menuBar li li.menu_li_close").hide();
+        $(".ul_menuBar li li.menu_li_open_parent").show();
+        $(".ul_menuBar li li.menu_li_open").show();
+        $(".ul_menuBar li li.menu_li_open_parent").parent().show();
+        $(".ul_menuBar li li.menu_li_open").parent().show();
     });
 
     $(".ul_menuBar li").on("mouseover", function () {
@@ -40,12 +46,7 @@ $(document).ready(function () {
     });
 
     $(".ul_menuBar li").on("click", function () {
-        $(".ul_menuBar").find("ul").hide();
-        $(".ul_menuBar li li.menu_li_close").hide();
-        $(".ul_menuBar li li.menu_li_open_parent").show();
-        $(".ul_menuBar li li.menu_li_open").show();
-        $(".ul_menuBar li li.menu_li_open_parent").parent().show();
-        $(".ul_menuBar li li.menu_li_open").parent().show();
+
     });
 
     $(document).on("click", function (e) {
