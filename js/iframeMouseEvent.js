@@ -7,15 +7,15 @@ window.addEventListener("DOMContentLoaded", () => {
     var ifch = document.getElementsByClassName("iframe_child");
     for (var i = 0; i < ifch.length; i++) {
         console.log(i);
-        ifch[i].contentWindow.addEventListener("click", function (e) {
+        ifch[i].window.addEventListener("click", function (e) {
             console.log("clicked!");
             console.log($(e.currentTarget).attr("scr"));
         });
-        ifch[i].contentWindow.addEventListener("mouseover", function (e) {
+        ifch[i].window.addEventListener("mouseover", function (e) {
             console.log("over!");
             $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
         });
-        ifch[i].contentWindow.addEventListener("mouseout", function (e) {
+        ifch[i].window.addEventListener("mouseout", function (e) {
             console.log("out!");
             $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
         });
