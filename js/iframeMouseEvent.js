@@ -4,9 +4,9 @@
 // DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
 
 var overIframe = null;
-var iframe_main = document.getElementById("iframe_main");
 
 window.addEventListener("DOMContentLoaded", () => {
+    var iframe_main = document.getElementById("iframe_main");
     var ifch = document.getElementsByClassName("iframe_child");
     for (var i = 0; i < ifch.length; i++) {
         console.log(i);
@@ -14,7 +14,9 @@ window.addEventListener("DOMContentLoaded", () => {
             //console.log("clicked!");
             console.log(overIframe);
             console.log($(overIframe).attr("src"));
-            iframe_main.contentWindow.location.href = $(overIframe).attr("src");
+            if ($(overIframe).attr("src") != null) {
+                iframe_main.contentWindow.location.href = $(overIframe).attr("src");
+            }
         });
         ifch[i].addEventListener("mouseover", (e) => {
             console.log("over!" + e.currentTarget);
