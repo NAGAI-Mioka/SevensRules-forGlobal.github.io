@@ -4,9 +4,9 @@
 // DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
 
 var overIframe = null;
+var iframe_main = document.getElementById("iframe_main");
 
 window.addEventListener("DOMContentLoaded", () => {
-    var iframe_main = document.getElementById("iframe_main");
     console.log(iframe_main);
     var ifch = document.getElementsByClassName("iframe_child");
     for (var i = 0; i < ifch.length; i++) {
