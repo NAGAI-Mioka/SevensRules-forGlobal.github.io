@@ -30,6 +30,8 @@ $(document).ready(function () {
                 $(elem).parent().removeClass("menu_li_open menu_li_open_parent").addClass("menu_li_close");
             }
         });
+
+        // メニューバー：現在開いているページの項目のみ残す
         $(".ul_menuBar").find("ul").hide();
         $(".ul_menuBar li li.menu_li_close").hide();
         $(".ul_menuBar li li.menu_li_open_parent").show();
@@ -38,13 +40,19 @@ $(document).ready(function () {
         $(".ul_menuBar li li.menu_li_open").parent().show();
     });
 
-    $(".ul_menuBar li").on("mouseover", function () {
+    // メニューバーの最上位の項目にカーソルオンすると開く
+    $(".ul_menuBar > li").on("mouseover", function () {
         //$(".ul_menuBar a").css("pointer-events", "auto");
         $(this).siblings().find("ul").hide(); // 兄弟liの子孫にいるulを全て非表示にする
         $(this).children().children().show();
         $(this).children().show(); // 自分の直下の子ulを表示する（スライド）
     });
 
+    $(".ul_menuBar > li li").on("mouseover", function (e) {
+        e.stopPropagation();
+    });
+
+    // メニューバーからカーソルアウトすると閉じる（現在開いているページの項目のみ残す）
     $(".ul_menuBar").on("mouseout", function () {
         $(".ul_menuBar").find("ul").hide();
         $(".ul_menuBar li li.menu_li_close").hide();
