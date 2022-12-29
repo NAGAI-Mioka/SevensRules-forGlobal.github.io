@@ -47,6 +47,7 @@ $(document).ready(function () {
         //$(this).siblings().hide(); // 兄弟liを全て非表示にする
         $(this).children().children().show(); // 自分の直下のliを表示する
         $(this).children().show(); // 自分の直下のulを表示する
+        e.stopPropagation();
     });
 
     $(".ul_menuBar > li li").on("mouseover", function (e) {
@@ -55,7 +56,7 @@ $(document).ready(function () {
         $(this).siblings().hide(); // 兄弟liを全て非表示にする
         $(this).children().children().show(); // 自分の直下のliを表示する
         $(this).children().show(); // 自分の直下のulを表示する
-        e.stopPropagation();
+
 
     });
 
