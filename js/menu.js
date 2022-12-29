@@ -41,7 +41,7 @@ $(document).ready(function () {
     });
 
     // メニューバーの最上位の項目にカーソルオンすると開く
-    $(".ul_menuBar > li").on("mouseover", function () {
+    $(".ul_menuBar > li").on("mouseover", function (e) {
         //$(".ul_menuBar a").css("pointer-events", "auto");
         $(this).siblings().find("ul").hide(); // 兄弟liの子孫にいるulを全て非表示にする
         //$(this).siblings().hide(); // 兄弟liを全て非表示にする
