@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (window.name === "iframe_main") {
                 overIframe = e.currentTarget;
                 $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
+                console.log("over!");
             }
             console.log(overIframe);
         });
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (window.name === "iframe_main") {
                 overIframe = null;
                 $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
+                console.log("out!");
             }
             console.log(overIframe);
         });
