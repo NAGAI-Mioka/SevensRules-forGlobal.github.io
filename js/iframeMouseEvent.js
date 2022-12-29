@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
         ifch[i].addEventListener("mouseover", (e) => {
-            console.log("over!" + e.currentTarget);
+            console.log(e.currentTarget);
             overIframe = e.currentTarget;
             $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
         });
         ifch[i].addEventListener("mouseout", (e) => {
-            console.log("out!" + e.currentTarget);
+            console.log(e.currentTarget);
             overIframe = null;
             $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
         });
