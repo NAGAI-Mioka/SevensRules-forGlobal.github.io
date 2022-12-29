@@ -6,39 +6,41 @@
 var overIframe = null;
 
 document.addEventListener("DOMContentLoaded", () => {
-    var ifch = document.getElementsByClassName("iframe_child");
-    for (var i = 0; i < ifch.length; i++) {
-        console.log(i);
-        ifch[i].contentWindow.addEventListener("click", (e) => {
-            //console.log("clicked!");
-            console.log(overIframe);
-            console.log($(overIframe).attr("src"));
+    if (window.name === "iframe_main") {
+        var ifch = document.getElementsByClassName("iframe_child");
+        for (var i = 0; i < ifch.length; i++) {
+            console.log(i);
+            ifch[i].contentWindow.addEventListener("click", (e) => {
+                //console.log("clicked!");
+                console.log(overIframe);
+                console.log($(overIframe).attr("src"));
 
-            // if ($(overIframe).attr("src") != null && window.name === "iframe_main") {
-            //     console.log(window);
-            //     window.location.href = $(overIframe).attr("src");
-            // }
-            if ($(overIframe).attr("src") != null) {
-                console.log(window);
-                window.location.href = $(overIframe).attr("src");
-            }
-        });
-        ifch[i].addEventListener("mouseover", (e) => {
-            if (window.name === "iframe_main") {
+                // if ($(overIframe).attr("src") != null && window.name === "iframe_main") {
+                //     console.log(window);
+                //     window.location.href = $(overIframe).attr("src");
+                // }
+                if ($(overIframe).attr("src") != null) {
+                    console.log(window);
+                    window.location.href = $(overIframe).attr("src");
+                }
+            });
+            ifch[i].addEventListener("mouseover", (e) => {
+                //if (window.name === "iframe_main") {
                 overIframe = e.currentTarget;
                 $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
                 console.log("over!");
-            }
-            console.log(overIframe);
-        });
-        ifch[i].addEventListener("mouseout", (e) => {
-            if (window.name === "iframe_main") {
+                //}
+                console.log(overIframe);
+            });
+            ifch[i].addEventListener("mouseout", (e) => {
+                //if (window.name === "iframe_main") {
                 overIframe = null;
                 $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
                 console.log("out!");
-            }
-            console.log(overIframe);
-        });
+                //}
+                console.log(overIframe);
+            });
+        }
     }
 });
 
