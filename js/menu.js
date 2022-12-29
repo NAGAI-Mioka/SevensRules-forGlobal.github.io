@@ -44,17 +44,8 @@ $(document).ready(function () {
     $(".ul_menuBar li").on("mouseover", function (e) {
         //$(".ul_menuBar a").css("pointer-events", "auto");
         $(this).siblings().find("ul").hide(); // 兄弟liの子孫にいるulを全て非表示にする
-        //$(this).siblings().hide(); // 兄弟liを全て非表示にする
         $(this).children().children().show(); // 自分の直下のliを表示する
         $(this).children().show(); // 自分の直下のulを表示する
-    });
-
-    $(".ul_menuBar li li").on("mouseover", function (e) {
-        //$(this).siblings().find("ul").hide(); // 兄弟liの子孫にいるulを全て非表示にする
-        $(this).siblings().hide(); // 兄弟liを全て非表示にする
-        //$(this).children().children().show(); // 自分の直下のliを表示する
-        //$(this).children().show(); // 自分の直下のulを表示する
-        e.stopPropagation();
     });
 
     // メニューバーからカーソルアウトすると閉じる（現在開いているページの項目のみ残す）
