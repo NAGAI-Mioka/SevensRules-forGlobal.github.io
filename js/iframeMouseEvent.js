@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var ifch = document.getElementsByClassName("iframe_child");
         for (var i = 0; i < ifch.length; i++) {
             console.log(i);
-            ifch[i].contentWindow.addEventListener("click", (e) => {
+            ifch[i].addEventListener("click", (e) => {
                 //console.log("clicked!");
                 console.log(overIframe);
                 console.log($(overIframe).attr("src"));
