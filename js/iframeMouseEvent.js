@@ -25,11 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         ifch[i].addEventListener("mouseover", (e) => {
             console.log(e.currentTarget);
+            console.log(e.target);
             overIframe = e.currentTarget;
             $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
         });
         ifch[i].addEventListener("mouseout", (e) => {
             console.log(e.currentTarget);
+            console.log(e.target);
             overIframe = null;
             $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
         });
