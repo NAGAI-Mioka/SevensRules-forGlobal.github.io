@@ -30,19 +30,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
         ifch[i].addEventListener("mouseover", (e) => {
-            if (window.name === "iframe_main") {
-                overIframe = e.currentTarget;
-                $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
-                console.log("over!");
-            }
+            //if (window.name === "iframe_main") {
+            overIframe = e.currentTarget;
+            $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
+            console.log("over!");
+            //}
             console.log(overIframe);
         });
         ifch[i].addEventListener("mouseout", (e) => {
-            if (window.name === "iframe_main") {
-                overIframe = null;
-                $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
-                console.log("out!");
-            }
+            //if (window.name === "iframe_main") {
+            overIframe = null;
+            $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
+            console.log("out!");
+            //}
             console.log(overIframe);
         });
     }
