@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     console.log(window);
                     window.location.href = $(overIframe).attr("src");
                 } else {
-                    //window.top.location.href = $(window.top.overIframe).attr("src");
+                    window.top.location.href = $(window.top.overIframe).attr("src");
                 }
             }
 
