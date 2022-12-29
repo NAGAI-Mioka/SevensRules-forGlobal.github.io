@@ -16,14 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (window.name === "iframe_main") {
                     console.log(window);
                     window.location.href = $(overIframe).attr("src");
+                    console.log(overIframe);
+                    console.log($(overIframe).attr("src"));
                 } else {
                     window.top.location.href = $(window.top.overIframe).attr("src");
+                    console.log(window.top.overIframe);
                 }
             }
-
-            console.log(overIframe);
-            console.log($(overIframe).attr("src"));
-
             // if ($(overIframe).attr("src") != null && window.name === "iframe_main") {
             //     console.log(window);
             //     window.location.href = $(overIframe).attr("src");
