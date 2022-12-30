@@ -19,12 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     console.log(overIframe);
                     console.log($(overIframe).attr("src"));
                 } else {
-                    var win = window;
-                    while (win.name != "Iframe_main") {
-                        console.log(win);
-                        win = win.parent;
-                    }
-                    console.log(win);
+                    console.log(window.top.document.getElementById("iframe_main"));
                     //console.log(window.parent);
                     window.location.href = $(overIframe).attr("src");
                 }
