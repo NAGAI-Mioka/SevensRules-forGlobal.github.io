@@ -19,9 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     console.log(overIframe);
                     console.log($(overIframe).attr("src"));
                 } else {
+                    var window_iframe_main = window.top.document.getElementById("iframe_main").contentWindow;
                     console.log(window.top.document.getElementById("iframe_main"));
                     //console.log(window.parent);
-                    window.top.document.getElementById("iframe_main").contentWindow.location.href = $(overIframe).attr("src");
+                    window_iframe_main.location.href = $(overIframe).attr("src");
                 }
             }
             // if ($(overIframe).attr("src") != null && window.name === "iframe_main") {
