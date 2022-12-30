@@ -2,13 +2,14 @@
 // マウスオーバー、マウスアウト時のCSSを変更する
 
 // DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
-
+var win_ifmain = window.top.document.getElementById("iframe_main").contentWindow;
+console.log(win_ifmain);
 var overIframe = null;
 
 document.addEventListener("DOMContentLoaded", () => {
-    var win_ifmain = window.top.document.getElementById("iframe_main").contentWindow;
+    //var win_ifmain = window.top.document.getElementById("iframe_main").contentWindow;
     var ifch = document.getElementsByClassName("iframe_child");
-    console.log(win_ifmain);
+    //console.log(win_ifmain);
     for (var i = 0; i < ifch.length; i++) {
         //console.log(i);
         ifch[i].contentWindow.addEventListener("click", (e) => {
