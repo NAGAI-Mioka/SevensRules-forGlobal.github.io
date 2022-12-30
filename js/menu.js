@@ -4,6 +4,7 @@ $(document).ready(function () {
     $(".button_back").on("click", function () {
         history.back();
     });
+    /*
     $(".button_up").on("click", function () {
         var url = iframe_main.contentWindow.location.href;
         if (url !== "https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/contents.html") {
@@ -13,6 +14,7 @@ $(document).ready(function () {
             iframe_main.contentWindow.location.href = rep;
         }
     });
+    */
     $(".button_top").on("click", function () {
         iframe_main.contentWindow.location.href = "https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/contents.html";
     });
