@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     console.log(window.top.document.getElementById("iframe_main"));
                     //console.log(window.parent);
-                    window.location.href = $(overIframe).attr("src");
+                    window.top.document.getElementById("iframe_main").contentWindow.location.href = $(overIframe).attr("src");
                 }
             }
             // if ($(overIframe).attr("src") != null && window.name === "iframe_main") {
