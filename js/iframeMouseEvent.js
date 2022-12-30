@@ -1,96 +1,30 @@
 // iframe属性をクリックすると、インライン表示されているページに飛ぶ
 // マウスオーバー、マウスアウト時のCSSを変更する
 
-// DOMツリー構築後にiframe要素を取得して、addEventlistenerを登録する
-//var win_ifmain = window.top.document.getElementById("iframe_main").contentWindow;
-//console.log(win_ifmain);
-//var overIframe = null;
-
 document.addEventListener("DOMContentLoaded", () => {
-    var win_ifmain = window.top.document.getElementById("iframe_main").contentWindow;
-    var ifch = document.getElementsByClassName("iframe_child");
-    var overIframe = null;
-    //console.log(win_ifmain);
+    var win_ifmain = window.top.document.getElementById("iframe_main").contentWindow; // iframe_mainのウィンドウを取得
+    var ifch = document.getElementsByClassName("iframe_child"); // 全てのiframe_childを取得
+    var overIframe = null; // 現在カーソルが入っているiframe_childを入れる変数
+
     for (var i = 0; i < ifch.length; i++) {
-        //console.log(i);
+
+        // iframe_childの内部をクリックした時
         ifch[i].contentWindow.addEventListener("click", (e) => {
             if ($(overIframe).attr("src") != null) {
-                //var window_iframe_main = window.top.document.getElementById("iframe_main").contentWindow;
-                //console.log(window.top.document.getElementById("iframe_main"));
                 win_ifmain.location.href = $(overIframe).attr("src");
             }
         });
+
+        // iframe_childにカーソルが入った時
         ifch[i].addEventListener("mouseover", (e) => {
-            //if (window.name === "iframe_main") {
             overIframe = e.currentTarget;
             $(e.currentTarget).removeClass("iframe_out").addClass("iframe_over");
-            console.log("over!");
-            //}
-            console.log(overIframe);
         });
+
+        // iframe_childからカーソルが出た時
         ifch[i].addEventListener("mouseout", (e) => {
-            //if (window.name === "iframe_main") {
             overIframe = null;
             $(e.currentTarget).removeClass("iframe_over").addClass("iframe_out");
-            console.log("out!");
-            //}
-            console.log(overIframe);
         });
     }
 });
-
-
-/*
-window.addEventListener("unload", function (e) {
-    console.log("unload!");
-    var ifch = document.getElementsByClassName("iframe_child");
-    for (var i = 0; i < ifch.length; i++) {
-        ifch[i].style.pointerEvents = "auto";
-    }
-});
-
-window.addEventListener("beforeunload", function (e) {
-    console.log("before unload!");
-    var ifch = document.getElementsByClassName("iframe_child");
-    for (var i = 0; i < ifch.length; i++) {
-        ifch[i].style.pointerEvents = "none";
-    }
-});
-*/
-
-/*
-$(document).ready(function () {
-
-    /*
-    $(".iframe_child").iframeTracker({
-        blurCallback: function (event) {
-            //window.location.href = $(this._overElement).attr("src");
-            //console.log($(this._overElement).attr("src"));
-            //console.log(event);
-            //$(this._overElement).iframeTracker(null);
-        },
-        overCallback: function (element, event) {
-            this._overElement = $(element);
-            //console.log("over!");
-            $(element).removeClass("iframe_out").addClass("iframe_over");
-        },
-        outCallback: function (element, event) {
-            this._overElement = null;
-            //console.log("out!");
-            $(element).removeClass("iframe_over").addClass("iframe_out");
-        },
-        _overElement: null
-    });
-    */
-
-/*
-$(iframe_main).on("load", function () {
-
-});
-$(iframe_main).on("beforeunload", function () {
-    $(".iframe_child").css("pointer-events", "none");
-});
- 
-});
-
-*/
