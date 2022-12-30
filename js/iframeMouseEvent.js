@@ -6,30 +6,17 @@
 var overIframe = null;
 
 document.addEventListener("DOMContentLoaded", () => {
-
+    var win_ifmain = window.top.document.getElementById("iframe_main").contentWindow;
     var ifch = document.getElementsByClassName("iframe_child");
+    console.log(win_ifmain);
     for (var i = 0; i < ifch.length; i++) {
-        console.log(i);
+        //console.log(i);
         ifch[i].contentWindow.addEventListener("click", (e) => {
-            //console.log("clicked!");
             if ($(overIframe).attr("src") != null) {
-                //if (window.name === "iframe_main") {
-                //console.log(window);
-                //window.location.href = $(overIframe).attr("src");
-                //console.log(overIframe);
-                //console.log($(overIframe).attr("src"));
-                //} else {
-                var window_iframe_main = window.top.document.getElementById("iframe_main").contentWindow;
-                console.log(window.top.document.getElementById("iframe_main"));
-                //console.log(window.parent);
-                window_iframe_main.location.href = $(overIframe).attr("src");
-                //}
+                //var window_iframe_main = window.top.document.getElementById("iframe_main").contentWindow;
+                //console.log(window.top.document.getElementById("iframe_main"));
+                win_ifmain.location.href = $(overIframe).attr("src");
             }
-            // if ($(overIframe).attr("src") != null && window.name === "iframe_main") {
-            //     console.log(window);
-            //     window.location.href = $(overIframe).attr("src");
-            // }
-
         });
         ifch[i].addEventListener("mouseover", (e) => {
             //if (window.name === "iframe_main") {
