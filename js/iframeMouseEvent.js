@@ -13,17 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
         ifch[i].contentWindow.addEventListener("click", (e) => {
             //console.log("clicked!");
             if ($(overIframe).attr("src") != null) {
-                if (window.name === "iframe_main") {
-                    console.log(window);
-                    window.location.href = $(overIframe).attr("src");
-                    console.log(overIframe);
-                    console.log($(overIframe).attr("src"));
-                } else {
-                    var window_iframe_main = window.top.document.getElementById("iframe_main").contentWindow;
-                    console.log(window.top.document.getElementById("iframe_main"));
-                    //console.log(window.parent);
-                    window_iframe_main.location.href = $(overIframe).attr("src");
-                }
+                //if (window.name === "iframe_main") {
+                //console.log(window);
+                //window.location.href = $(overIframe).attr("src");
+                //console.log(overIframe);
+                //console.log($(overIframe).attr("src"));
+                //} else {
+                var window_iframe_main = window.top.document.getElementById("iframe_main").contentWindow;
+                console.log(window.top.document.getElementById("iframe_main"));
+                //console.log(window.parent);
+                window_iframe_main.location.href = $(overIframe).attr("src");
+                //}
             }
             // if ($(overIframe).attr("src") != null && window.name === "iframe_main") {
             //     console.log(window);
