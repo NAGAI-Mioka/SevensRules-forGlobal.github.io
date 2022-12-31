@@ -9,7 +9,7 @@ $(iframe_main).on("load", function () {
     }
 });
 
-$(iframe_main).on("unload", function () {
+$(window).on("unload", function () {
     console.log("unload!");
     Cookies.set("is_read", "true");
 });
