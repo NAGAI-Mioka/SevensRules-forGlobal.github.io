@@ -134,10 +134,18 @@ html, body {
     border: 5px solid grey;
 }
 
-.body_unread {
+body.unvisited {
     background-color: white;
 }
 
-.body_read {
+h1.unvisited {
+    color: black;
+}
+
+body.visited {
     background-color: burlywood;
+}
+
+h1.visited {
+    color: blueviolet;
 }
