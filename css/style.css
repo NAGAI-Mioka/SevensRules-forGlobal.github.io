@@ -133,3 +133,11 @@ html, body {
 .iframe_out {
     border: 5px solid grey;
 }
+
+.body_unread {
+    background-color: white;
+}
+
+.body_read {
+    background-color: burlywood;
+}
