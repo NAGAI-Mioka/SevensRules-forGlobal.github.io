@@ -1,5 +1,6 @@
-var iframe_main = document.getElementById("iframe_main");
+// 一度見たページのデザインを変える
 
+// 描画されたとき
 $(window).on("load", function () {
     console.log("load!");
     if (Cookies.get("is_read") === "true") {
@@ -9,6 +10,7 @@ $(window).on("load", function () {
     }
 });
 
+// iframe_mainの表示から外れたとき
 $(window).on("unload", function () {
     if (window.parent === window.top) {
         console.log("unload!");
