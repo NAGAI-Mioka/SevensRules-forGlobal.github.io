@@ -13,7 +13,7 @@ $(window).on("load", function () {
 // iframe_mainの表示から外れたとき
 $(window).on("unload", function () {
     if (window.parent === window.top) {
-        console.log("unload!");
-        Cookies.set("is_read", "true");
+        console.log("unload!" + window.location.href);
+        Cookies.set("is_read", "true", { path: "/page-game/contents.html" });
     }
 });
