@@ -12,6 +12,8 @@ $(window).on("load", function () {
 });
 
 $(window).on("unload", function () {
-    console.log("unload!");
-    Cookies.set("is_read", "true");
+    if (window.parent === window.top) {
+        console.log("unload!");
+        Cookies.set("is_read", "true");
+    }
 });
