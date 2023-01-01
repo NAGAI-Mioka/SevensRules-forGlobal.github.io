@@ -163,17 +163,17 @@ body.visited {
 h1.visited {
     color: blueviolet;
     border-bottom: 3px solid blueviolet;
-    line-height: 30px;
+    padding-left: 40px;
     background: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited.svg") no-repeat;
 }
 
 /*要素の単なるデザイン*/
 h1 {
-    padding-left: 50px;
+    line-height: 50px;
 }
 
 .button_back, .button_top {
-    height: 40px;
+    line-height: 30px;
     padding: 10px;
     border: none;
     border-radius: 100vh;
@@ -181,10 +181,8 @@ h1 {
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
-.button_back svg, .button_top svg {
+.button_back img, .button_top img {
+    width: 30px;
     height: 30px;
 }
 
-#icon_back, #icon_home {
-    color: ghostwhite;
-}
