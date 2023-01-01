@@ -185,6 +185,13 @@ button.button_back {
     background-image: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited.svg") no-repeat;
 }
 
+button svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+
 button img {
     width: 25px;
     height: 25px;
