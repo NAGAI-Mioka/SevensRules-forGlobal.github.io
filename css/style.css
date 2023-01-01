@@ -2,14 +2,9 @@
 
 /*画面全体の構成*/
 
-html {
+html, body{
     height: 100%;
     margin: 0;
-}
-
-body {
-    height: 100%;
-    margin: 0 10px 0 10px;
 }
 
 #div_full {
@@ -24,6 +19,11 @@ body {
 
 #div_contents {
     flex-grow: 1;
+
+}
+
+iframe {
+    padding: 0 10px 0 10px;
 }
 
 #iframe_main {
