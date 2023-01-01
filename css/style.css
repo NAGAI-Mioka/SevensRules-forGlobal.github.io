@@ -140,7 +140,7 @@ html, body {
     border: 5px solid grey;
 }
 
-/*既に読んだページ*/
+/*既に読んだページ（見出しとページ背景）*/
 
 body.unvisited {
     background-color: white;
@@ -156,8 +156,12 @@ body.visited {
 
 h1.visited {
     color: blueviolet;
+    padding-left: 30px;
+    line-height: 30px;
+    background: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited48px.svg") no-repeat;
 }
 
+/*
 h1.visited:before {
     position: relative;
     top: 10px;
@@ -166,3 +170,4 @@ h1.visited:before {
     height: 40px;
     content: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited48px.svg");
 }
+*/
