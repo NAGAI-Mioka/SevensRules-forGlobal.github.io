@@ -4,7 +4,7 @@
 
 html, body {
     height: 100%;
-    margin: 0;
+    margin: 0 10px 0 10px;
 }
 
 #div_full {
@@ -156,7 +156,7 @@ body.visited {
 
 h1.visited {
     color: blueviolet;
-    padding-left: 30px;
+    padding-left: 40px;
     line-height: 30px;
     background: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited48px.svg") no-repeat;
 }
