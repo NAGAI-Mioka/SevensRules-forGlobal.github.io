@@ -22,6 +22,10 @@ html, body{
 
 }
 
+body.contents {
+    padding: 10px
+}
+
 iframe {
     padding: 0 10px 0 10px;
 }
