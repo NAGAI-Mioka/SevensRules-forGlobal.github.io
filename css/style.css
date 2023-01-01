@@ -153,6 +153,7 @@ body.unvisited {
 
 h1.unvisited {
     color: black;
+    border-bottom: 3px solid black;
 }
 
 body.visited {
@@ -161,6 +162,7 @@ body.visited {
 
 h1.visited {
     color: blueviolet;
+    border-bottom: 3px solid blueviolet;
     padding-left: 40px;
     line-height: 30px;
     background: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited48px.svg") no-repeat;
