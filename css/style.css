@@ -177,11 +177,12 @@ button {
     padding-left: 50px;
     border: 3px solid black;
     border-radius: 100vh;
+    background-color: white;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 button.button_back {
-    background-image: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_back.svg") no-repeat;
+    background-image: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited.svg") no-repeat;
 }
 
 button img {
