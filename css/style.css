@@ -160,7 +160,7 @@ h1.visited {
 
 h1.visited:before {
     position: relative;
-    top: 2px;
-    margin: 0 10px 0 0;
-    content: url("https://nagai mioka .github .io/SevensRules forGlobal .github .io/img/icon_visited 48px.svg;");
+    top: 10px;
+    margin: 0 10px 0 10px;
+    content: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited48px.svg");
 }
