@@ -145,7 +145,7 @@ body.contents {
     border: 5px solid grey;
 }
 
-/*既に読んだページ（見出しとページ背景）*/
+/*未読・既読ページ（見出しとページ背景）*/
 
 body.unvisited {
     background-color: white;
@@ -163,18 +163,27 @@ body.visited {
 h1.visited {
     color: blueviolet;
     border-bottom: 3px solid blueviolet;
-    padding-left: 40px;
     line-height: 30px;
-    background: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited48px.svg") no-repeat;
+    background: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited.svg") no-repeat;
 }
 
-/*
-h1.visited:before {
-    position: relative;
-    top: 10px;
-    margin: 0 10px 0 10px;
-    width: 40px;
-    height: 40px;
-    content: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited48px.svg");
+/*要素の単なるデザイン*/
+h1 {
+    padding-left: 50px;
 }
-*/
+
+.button_back, .button_top {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: steelblue;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+.button_back svg, .button_top svg {
+    width: 100%;
+    height: 100%;
+    fill: ghostwhite;
+}
