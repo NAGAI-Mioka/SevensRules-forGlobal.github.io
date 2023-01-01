@@ -172,17 +172,21 @@ h1 {
     line-height: 50px;
 }
 
-.button_back, .button_top {
-    line-height: 30px;
-    padding: 10px;
-    border: none;
+button {
+    line-height: 40px;
+    padding-left: 50px;
+    border: 3px solid black;
     border-radius: 100vh;
-    background: steelblue;
+    background-color: white;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
-.button_back img, .button_top img {
-    width: 30px;
-    height: 30px;
+button.button_back {
+    background-image: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_back.svg") no-repeat;
+}
+
+button img {
+    width: 25px;
+    height: 25px;
 }
 
