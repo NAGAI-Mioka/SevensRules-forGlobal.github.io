@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*画面全体の構成*/
+
 html, body {
     height: 100%;
     margin: 0;
@@ -25,6 +27,8 @@ html, body {
     border: none;
     border-top: 1px solid grey;
 }
+
+/*ドロップダウンメニュー*/
 
 .ul_menuBar {
     margin: 0;
@@ -117,6 +121,8 @@ html, body {
     background-color: lightcoral;
 }
 
+/*子情報を表示するiframe*/
+
 .iframe_child {
     width: 600px;
     height: 400px;
@@ -133,6 +139,8 @@ html, body {
 .iframe_out {
     border: 5px solid grey;
 }
+
+/*既に読んだページ*/
 
 body.unvisited {
     background-color: white;
@@ -154,5 +162,5 @@ h1.visited:before {
     position: relative;
     top: 2px;
     margin: 0 10px 0 0;
-    content: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited48px.png");
+    content: url("https://nagai mioka .github .io/SevensRules forGlobal .github .io/img/icon_visited 48px.svg;");
 }
