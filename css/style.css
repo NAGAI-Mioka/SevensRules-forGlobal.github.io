@@ -176,13 +176,15 @@ h1 {
     height: 40px;
     padding: 10px;
     border: none;
-    border-radius: 50%;
+    border-radius: 100vh;
     background: steelblue;
-    color: ghostwhite;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 .button_back svg, .button_top svg {
-    height: 100%;
-    fill: currentColor;
+    height: 30px;
+}
+
+#icon_back, #icon_home {
+    color: ghostwhite;
 }
