@@ -170,6 +170,9 @@ h1.visited {
 h1 {
     line-height: 50px;
 }
+h1, h2, h3, p {
+    color:rgb(50, 50, 50);
+}
 
 button {
     vertical-align: middle;
