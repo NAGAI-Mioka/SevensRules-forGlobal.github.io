@@ -50,14 +50,15 @@ body.contents {
 }
 
 .ul_menuBar a {
-    color: black;
+    color: rgb(50, 50, 50);
     height: 100%;
     line-height: 40px;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     display: block;
     pointer-events: auto;
+    transition: 200ms;
 }
 
 .ul_menuBar a:hover {
@@ -151,8 +152,8 @@ body.unvisited {
 }
 
 h1.unvisited {
-    color: black;
-    border-bottom: 3px solid black;
+    color: rgb(50, 50, 50);
+    border-bottom: 3px solid rgb(50, 50, 50);
 }
 
 body.visited {
