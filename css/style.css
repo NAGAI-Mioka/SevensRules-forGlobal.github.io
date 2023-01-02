@@ -174,7 +174,9 @@ h1 {
 
 button {
     line-height: 30px;
-    border: 3px solid black;
+    vertical-align: middle;
+    padding: 2px, 15px;
+    border: 3px solid rgb(50, 50, 50);
     border-radius: 100vh;
     background-color: white;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
