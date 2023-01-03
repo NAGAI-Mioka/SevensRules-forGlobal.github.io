@@ -20,10 +20,7 @@ html, body{
 
 #title {
     text-align: center;
-}
-
-#backtop {
-    position:static;
+    display: inline;
 }
 
 #div_contents {
@@ -188,7 +185,7 @@ h1, h2, h3, p {
     color:rgb(50, 50, 50);
 }
 
-#backtop button {
+button {
     vertical-align: middle;
     margin: 4px 0 6px 10px;
     padding: 4px 30px;
@@ -201,7 +198,7 @@ h1, h2, h3, p {
     transition: 200ms;
 }
 
-#backtop button:hover {
+button:hover {
     color: white;
     background-color: rgb(50, 50, 50);
 }
