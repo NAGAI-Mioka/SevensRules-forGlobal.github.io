@@ -66,7 +66,7 @@ body.contents {
     line-height: 40px;
     text-align: center;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: bold;
     display: block;
     pointer-events: auto;
     transition: 200ms;
@@ -192,12 +192,12 @@ h1 {
 }
 
 dt {
-    font-weight: 400;
+    font-weight: bold;
     font-size: large;
 }
 
 dd {
-    margin-bottom: 5pt;
+    margin-bottom: 6pt;
 }
 
 button {
@@ -208,7 +208,7 @@ button {
     border-radius: 100vh;
     background-color: white;
     font-size: large;
-    font-weight: 700;
+    font-weight: bold;
     transition: 200ms;
 }
 
