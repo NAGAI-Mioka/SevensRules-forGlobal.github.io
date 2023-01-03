@@ -189,6 +189,7 @@ h1 {
 
 * {
     color:rgb(50, 50, 50);
+    box-sizing: border-box;
 }
 
 strong {
@@ -218,6 +219,11 @@ p a:hover {
 
 p a:visited {
     color: #9057FF;
+}
+
+dl {
+    width: 50%;
+    float: left;
 }
 
 dt {
