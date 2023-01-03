@@ -129,10 +129,6 @@ body.contents {
 /*子情報を表示するiframe*/
 
 .iframe_child {
-    /*
-        実際のwidth： 600 * 0.75 = 450
-        600 - 600*0.75 = 600 * 0.25
-    */
     --ifScale: 0.75;
     width: calc(300px/var(--ifScale));
     height: calc(200px/var(--ifScale));
@@ -143,11 +139,11 @@ body.contents {
 }
 
 .iframe_over {
-    border: 5px solid red;
+    border: 4px solid red;
 }
 
 .iframe_out {
-    border: 5px solid grey;
+    border: 4px solid grey;
 }
 
 /*未読・既読ページ（見出しとページ背景）*/
