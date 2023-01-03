@@ -133,12 +133,13 @@ body.contents {
         実際のwidth： 600 * 0.75 = 450
         600 - 600*0.75 = 600 * 0.25
     */
-    width: calc(300px/0.75);
-    height: calc(200px/0.75);
+    --ifScale: 0.75;
+    width: calc(300px/var(--ifScale));
+    height: calc(200px/var(--ifScale));
     transform-origin: top left;
-    transform: scale(0.75);
-    margin-right: calc(-300px*0.25);
-    margin-bottom: calc(-200px*0.25);
+    transform: scale(var(--ifScale));
+    margin-right: calc(-300px*(1 - var(--ifScale)));
+    margin-bottom: calc(-200px*(1 - var(--ifScale)));
 }
 
 .iframe_over {
