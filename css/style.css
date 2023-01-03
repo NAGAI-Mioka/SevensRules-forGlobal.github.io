@@ -204,7 +204,7 @@ strong::before {
     position: absolute;
     top: 70%;
     left: 0;
-    background: rgba(240, 128, 128, 0.2);
+    background: rgba(240, 128, 128, 0.4);
     z-index: -1;
 }
 
