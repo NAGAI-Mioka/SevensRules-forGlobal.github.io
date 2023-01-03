@@ -19,8 +19,8 @@ html, body{
 }
 
 #title {
+    display: inline-block;
     text-align: center;
-    display: inline;
 }
 
 #div_contents {
