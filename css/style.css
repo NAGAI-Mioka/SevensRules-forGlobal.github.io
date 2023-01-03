@@ -143,7 +143,7 @@ body.contents {
     --ifScale: 0.75;
     width: calc(300px/var(--ifScale));
     height: calc(200px/var(--ifScale));
-    transform-origin: top left;
+    transform-origin: 0 0;
     transform: scale(var(--ifScale));
     margin-right: calc(-300px*(1 - var(--ifScale)));
     margin-bottom: calc(-200px*(1 - var(--ifScale)));
