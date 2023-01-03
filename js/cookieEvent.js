@@ -7,6 +7,13 @@ $(window).on("load", function () {
     } else {
         $("body, h1").removeClass("visited").addClass("unvisited");
     }
+
+    // iframe_mainに表示されているとき、ドロップダウンメニューを避ける
+    if (window.parent === window.top) {
+        $("body.contents").css("padding-top", "25px");
+    } else {
+        $("body.contents").css("padding-top", "10px");
+    }
 });
 
 // iframe_mainの表示から外れたとき
