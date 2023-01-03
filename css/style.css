@@ -129,12 +129,16 @@ body.contents {
 /*子情報を表示するiframe*/
 
 .iframe_child {
-    width: 600px;
-    height: 400px;
+    /*
+        実際のwidth： 600 * 0.75 = 450
+        600 - 600*0.75 = 600 * 0.25
+    */
+    width: 300px/0.75;
+    height: 200px/0.75;
     transform-origin: top left;
-    transform: scale(0.5);
-    margin-right: -300px;
-    margin-bottom: -200px;
+    transform: scale(0.75);
+    margin-right: -300px*0.25;
+    margin-bottom: -200px*0.25;
 }
 
 .iframe_over {
