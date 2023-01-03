@@ -188,11 +188,11 @@ h1 {
 }
 
 * {
-    background-color: rgb(250, 192, 192);
+    color:rgb(50, 50, 50);
 }
 
 strong {
-    color: #ff5f17;
+    background-color: rgb(250, 192, 192);
 }
 
 p a {
