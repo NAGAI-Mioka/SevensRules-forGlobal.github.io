@@ -18,6 +18,10 @@ html, body{
     height: auto;
 }
 
+h1#title {
+    text-align: center;
+}
+
 #div_contents {
     flex-grow: 1;
 }
