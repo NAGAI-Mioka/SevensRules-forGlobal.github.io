@@ -18,8 +18,12 @@ html, body{
     height: auto;
 }
 
-h1#title {
+#title {
     text-align: center;
+}
+
+#backtop {
+    position:static;
 }
 
 #div_contents {
@@ -184,7 +188,7 @@ h1, h2, h3, p {
     color:rgb(50, 50, 50);
 }
 
-button {
+#backtop button {
     vertical-align: middle;
     margin: 4px 0 6px 10px;
     padding: 4px 30px;
@@ -197,7 +201,7 @@ button {
     transition: 200ms;
 }
 
-button:hover {
+#backtop button:hover {
     color: white;
     background-color: rgb(50, 50, 50);
 }
