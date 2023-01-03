@@ -25,7 +25,7 @@ div#top {
 }
 
 #title {
-    margin: 15pt 20pt;
+    margin: 10pt 20pt;
     display: inline-block;
 }
 
@@ -62,7 +62,6 @@ body.contents {
 }
 
 .ul_menuBar a {
-    color: rgb(50, 50, 50);
     height: 100%;
     line-height: 40px;
     text-align: center;
@@ -169,7 +168,6 @@ body.unvisited {
 }
 
 h1.unvisited {
-    color: rgb(50, 50, 50);
     border-bottom: 3px solid rgb(50, 50, 50);
 }
 
@@ -188,8 +186,18 @@ h1.visited {
 h1 {
     line-height: 50px;
 }
-h1, h2, h3, p {
+
+* {
     color:rgb(50, 50, 50);
+}
+
+dt {
+    font-weight: 400;
+    font-size: large;
+}
+
+dd {
+    margin-bottom: 5pt;
 }
 
 button {
@@ -199,7 +207,6 @@ button {
     border: 3px solid rgb(50, 50, 50);
     border-radius: 100vh;
     background-color: white;
-    color: rgb(50, 50, 50);
     font-size: large;
     font-weight: 700;
     transition: 200ms;
