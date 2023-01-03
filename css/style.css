@@ -11,6 +11,7 @@ html, body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
 }
 
 #div_menu {
@@ -19,7 +20,6 @@ html, body{
 
 #div_contents {
     flex-grow: 1;
-    overflow: hidden;
 }
 
 body.contents {
@@ -140,11 +140,13 @@ body.contents {
 }
 
 .iframe_over {
-    border: 4px solid red;
+    border: 3px solid red;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .iframe_out {
-    border: 4px solid grey;
+    border: 3px solid grey;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 /*未読・既読ページ（見出しとページ背景）*/
