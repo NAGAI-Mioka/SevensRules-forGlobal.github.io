@@ -191,6 +191,23 @@ h1 {
     color:rgb(50, 50, 50);
 }
 
+strong {
+    color: #ff5f17;
+}
+
+p a {
+    color: #005fff;
+    transition: 200ms;
+}
+
+p a:hover {
+    opacity: 0.6;
+}
+
+p a:visited {
+    color: #9057FF;
+}
+
 dt {
     font-weight: bold;
     font-size: large;
