@@ -19,9 +19,8 @@ html, body{
 }
 
 #title {
-    margin: 15pt;
+    margin: 15pt 20pt;
     display: inline-block;
-    text-align: center;
 }
 
 #div_contents {
@@ -144,6 +143,7 @@ body.contents {
     margin-right: calc(-300px*(1 - var(--ifScale)));
     margin-bottom: calc(-200px*(1 - var(--ifScale)));
     transition: 200ms;
+    transition-property: border, box-shadow;
 }
 
 .iframe_over {
@@ -187,8 +187,8 @@ h1, h2, h3, p {
 }
 
 button {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
     margin-left: 10px;
     padding: 4px 30px;
     border: 3px solid rgb(50, 50, 50);
