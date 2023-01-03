@@ -225,7 +225,7 @@ dl {
     width:fit-content;
     max-width: 50%;
     margin-block: 0;
-    padding: 0 0.5em 0 2em;
+    padding: 0 2em 0 0.5em;
     float: left;
     border-left: 5px solid lightcoral;
 }
@@ -236,6 +236,7 @@ dt {
 }
 
 dd {
+    margin-inline-start: 30px;
     margin-bottom: 0.5em;
 }
 
