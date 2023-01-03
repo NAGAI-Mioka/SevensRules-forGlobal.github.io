@@ -41,6 +41,7 @@ body.contents {
     top: 50%;
     display: flex;
     background-color: lightcoral;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .ul_menuBar li {
