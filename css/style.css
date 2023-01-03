@@ -202,9 +202,9 @@ strong::before {
     width: 100%;
     height: 30%;
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 0;
-    background: linear-gradient(45deg, rgb(240, 128, 128, 0.2) 0%, rgba(240, 128, 128, 0.8) 15% 45%, rgba(240, 128, 128, 0.2) 100%);
+    background: rgba(240, 128, 128, 0.2);
     z-index: -1;
 }
 
@@ -222,9 +222,10 @@ p a:visited {
 }
 
 dl {
-    width: 50%;
+    width:fit-content;
+    max-width: 50%;
     margin-block: 0;
-    padding-left: 0.5em;
+    padding: 0 0.5em;
     float: left;
     border-left: 5px solid lightcoral;
 }
