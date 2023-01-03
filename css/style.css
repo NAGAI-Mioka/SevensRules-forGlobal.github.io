@@ -137,6 +137,7 @@ body.contents {
     transform: scale(var(--ifScale));
     margin-right: calc(-300px*(1 - var(--ifScale)));
     margin-bottom: calc(-200px*(1 - var(--ifScale)));
+    transition: 200ms;
 }
 
 .iframe_over {
