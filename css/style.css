@@ -191,6 +191,10 @@ h1 {
     color:rgb(50, 50, 50);
 }
 
+strong {
+    position: relative;
+}
+
 strong::before {
     content: "";
     width: 100%;
