@@ -1,9 +1,9 @@
 iframe#goal {
-    --thisWid: 50%;
-    --thisHei: 30%;
+    --thisWid: 600px;
+    --thisHei: 200px;
 
     width: calc(var(--thisWid) / var(--ifScale));
     height: calc(var(--thisHei) / var(--ifScale));
-    margin-right: calc(var(--thisWid) * (var(--ifScale) - 1.04));
-    margin-bottom: calc(var(--thisHei) * (var(--ifScale) - 1.05));
+    margin-right: calc(var(--thisWid) * (var(--ifScale) - 1));
+    margin-bottom: calc(var(--thisHei) * (var(--ifScale) - 1));
 }
