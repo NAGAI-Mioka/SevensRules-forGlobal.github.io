@@ -12,7 +12,7 @@ $(window).on("load", function () {
     if (window.parent === window.top) {
         $("body.contents").css("padding-top", "25px");
     } else {
-        $("body.contents").css("padding-top", "10px");
+        $("body.contents").css("padding-top", "0px");
     }
 });
 
