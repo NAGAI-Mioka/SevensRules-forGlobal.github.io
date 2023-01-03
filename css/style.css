@@ -195,6 +195,17 @@ strong {
     background-color: rgb(250, 192, 192);
 }
 
+strong::before {
+    content: "";
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    background: linear-gradient(45deg, transparent 0%, #fea6a6 0% 40%, transparent 100%);
+    z-index: -1;
+}
+
 p a {
     color: #005fff;
     transition: 200ms;
