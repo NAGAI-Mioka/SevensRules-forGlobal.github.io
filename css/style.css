@@ -18,6 +18,11 @@ html, body{
     height: auto;
 }
 
+div#top {
+    display: flex;
+    align-items: center;
+}
+
 #title {
     margin: 15pt 20pt;
     display: inline-block;
@@ -187,8 +192,7 @@ h1, h2, h3, p {
 }
 
 button {
-    display: flex;
-    align-items: center;
+    display: inline-block;
     margin-left: 10px;
     padding: 4px 30px;
     border: 3px solid rgb(50, 50, 50);
