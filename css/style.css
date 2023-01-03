@@ -19,6 +19,7 @@ html, body{
 }
 
 #title {
+    margin: 15pt;
     display: inline-block;
     text-align: center;
 }
@@ -186,8 +187,9 @@ h1, h2, h3, p {
 }
 
 button {
+    display: inline-block;
     vertical-align: middle;
-    margin: 4px 0 6px 10px;
+    margin-left: 10px;
     padding: 4px 30px;
     border: 3px solid rgb(50, 50, 50);
     border-radius: 100vh;
