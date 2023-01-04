@@ -9,13 +9,11 @@ $(window).on("load", function () {
     }
 
     // iframe_mainに表示されているとき、ドロップダウンメニューを避ける
-    /*
     if (window.parent === window.top) {
-        $("body.contents").css("padding-top", "25px");
+        $("body.contents").prop("padding", "25px 20px 10px 20px");
     } else {
-        $("body.contents").css("padding-top", "0px");
+        $("body.contents").prop("padding", "0px 20px 10px 20px");
     }
-    */
 });
 
 // iframe_mainの表示から外れたとき
