@@ -11,10 +11,8 @@ $(window).on("load", function () {
     // iframe_mainに表示されているとき、ドロップダウンメニューを避ける
     if (window.parent === window.top) {
         $("body.contents").css("padding-top", "25px");
-        $("body.contents").css("top", "0px");
     } else {
         $("body.contents").css("padding-top", "0px");
-        $("body.contents").css("top", "-25px");
     }
 });
 
