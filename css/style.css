@@ -153,13 +153,23 @@ body.contents {
 }
 */
 
+.div_ic {
+    width: 600px;
+    height: 200px;
+    margin: 0;
+    overflow: hidden;
+}
+
 .iframe_child {
     width: 600px;
     height: 400px;
     transform-origin: 0 0;
     transform: scale(0.5);
-    margin-right: -300pt;
-    margin-bottom: -200pt;
+    /*
+    margin-right: -100%;
+    margin-bottom: -100%;
+    */
+    position: relative;
     transition: 200ms;
     transition-property: border, box-shadow;
 }
