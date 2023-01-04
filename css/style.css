@@ -35,6 +35,7 @@ div#top {
 }
 
 body.contents {
+    box-sizing: content-box;
     height: 100%;
     padding: 25pt;
 }
@@ -155,8 +156,8 @@ body.contents {
 */
 
 .div_ifch {
-    width: calc(25% - 4pt);
-    height: calc(50% - 2pt);
+    width: 25%;
+    height: 50%;
     display: inline-block;
     margin: 0;
     overflow: hidden;
