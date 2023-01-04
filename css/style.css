@@ -202,7 +202,9 @@ h1.visited {
     color: blueviolet;
     border-bottom: 3px solid blueviolet;
     padding-left: 60px;
-    background: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited.svg") no-repeat;
+    background-image: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited.svg");
+    background-repeat: no-repeat;
+    background-size: 50px;
 }
 
 /*要素の単なるデザイン*/
