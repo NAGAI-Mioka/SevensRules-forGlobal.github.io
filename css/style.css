@@ -139,6 +139,7 @@ body.contents {
 
 /*子情報を表示するiframe*/
 
+/*
 .iframe_child {
     --ifScale: 0.75;
     width: calc(300px/var(--ifScale));
@@ -147,6 +148,18 @@ body.contents {
     transform: scale(var(--ifScale));
     margin-right: calc(-300px*(1 - var(--ifScale)));
     margin-bottom: calc(-200px*(1 - var(--ifScale)));
+    transition: 200ms;
+    transition-property: border, box-shadow;
+}
+*/
+
+.iframe_child {
+    width: 600px;
+    height: 400px;
+    transform-origin: 0 0;
+    transform: scale(0.5);
+    margin-right: -300pt;
+    margin-bottom: -200pt;
     transition: 200ms;
     transition-property: border, box-shadow;
 }
