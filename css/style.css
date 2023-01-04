@@ -4,6 +4,7 @@
 
 html, body{
     height: 100%;
+    vertical-align: top;
     margin: 0;
 }
 
@@ -31,12 +32,10 @@ div#top {
 
 #div_contents {
     flex-grow: 1;
-    display: flex;
-    justify-content: center;
 }
 
 body.contents {
-    height: auto;
+    height: 100%;
     padding: 25px 20px 10px 20px;
 }
 
@@ -156,8 +155,8 @@ body.contents {
 */
 
 .div_ifch {
-    width: 300px;
-    height: 200px;
+    width: calc(25% - 4pt);
+    height: calc(50% - 4pt);
     display: inline-block;
     margin: 0;
     overflow: hidden;
