@@ -1,14 +1,14 @@
 div#goal {
-    width: calc(100% / 2);
-    height: calc(100% / 3);
+    width: 50vw;
+    height: 30vh;
 }
 
 div#before {
-    width: calc(100% / 4);
-    height: calc(100% / 3);
+    width: 25vw;
+    height: 30vh;
 }
 
 div#game {
-    width: calc(100% / 4);
-    height: calc(100% / 3);
+    width: 25vw;
+    height: 30vh;
 }
