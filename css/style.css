@@ -31,11 +31,11 @@ div#top {
 
 #div_contents {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 body.contents {
-    display: flex;
-    justify-content: center;
     height: auto;
     padding: 25px 20px 10px 20px;
 }
