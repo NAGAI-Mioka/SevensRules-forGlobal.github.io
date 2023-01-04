@@ -36,7 +36,7 @@ div#top {
 
 body.contents {
     height: 100%;
-    padding: 25px 20px 10px 20px;
+    padding: 25;
 }
 
 #iframe_main {
@@ -156,7 +156,7 @@ body.contents {
 
 .div_ifch {
     width: calc(25% - 4pt);
-    height: calc(50% - 4pt);
+    height: calc(50% - 2pt);
     display: inline-block;
     margin: 0;
     overflow: hidden;
