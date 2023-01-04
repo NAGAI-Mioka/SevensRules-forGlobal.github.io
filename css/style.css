@@ -156,6 +156,7 @@ body.contents {
 .div_ic {
     width: 600px;
     height: 200px;
+    display: inline-block;
     margin: 0;
     overflow: hidden;
 }
