@@ -153,36 +153,37 @@ body.contents {
 }
 */
 
-.div_ic {
+.div_ifch {
     width: 300px;
     height: 200px;
     display: inline-block;
     margin: 0;
     overflow: hidden;
+    transition: 200ms;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.div_ifch:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .iframe_child {
-    width: 600px;
-    height: 400px;
+    width: 200%;
+    height: 200%;
     transform-origin: 0 0;
     transform: scale(0.5);
-    /*
-    margin-right: -100%;
-    margin-bottom: -100%;
-    */
-    position: relative;
     transition: 200ms;
-    transition-property: border, box-shadow;
+    transition-property: border;
 }
 
 .iframe_over {
     border: 3px solid red;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    
 }
 
 .iframe_out {
     border: 3px solid grey;
-    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
+    
 }
 
 /*未読・既読ページ（見出しとページ背景）*/
