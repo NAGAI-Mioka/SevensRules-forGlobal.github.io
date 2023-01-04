@@ -168,23 +168,20 @@ body.contents {
 }
 
 .iframe_child {
-    --ifScale: 0.5;
-    width: calc(100% / --ifScale);
-    height: calc(100% / --ifScale);
+    width: calc(100% / 0.75);
+    height: calc(100% / 0.75);
     transform-origin: 0 0;
-    transform: scale(--ifScale);
+    transform: scale(0.75);
     transition: 200ms;
     transition-property: border;
 }
 
 .iframe_over {
     border: 3px solid red;
-    
 }
 
 .iframe_out {
     border: 3px solid grey;
-    
 }
 
 /*未読・既読ページ（見出しとページ背景）*/
