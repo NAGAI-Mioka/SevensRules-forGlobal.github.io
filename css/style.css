@@ -37,7 +37,7 @@ div#top {
 body.contents {
     box-sizing: content-box;
     height: 100%;
-    padding: 25pt;
+    padding: 25pt 20pt 10pt 20pt;
 }
 
 #iframe_main {
@@ -156,8 +156,8 @@ body.contents {
 */
 
 .div_ifch {
-    width: 25%;
-    height: 50%;
+    width: calc(25% - 3pt);
+    height: calc(50% - 2pt);
     display: inline-block;
     margin: 0;
     overflow: hidden;
