@@ -214,20 +214,23 @@ span.red {
 
 p a,
 dt a,
-dd a {
+dd a,
+li a {
     color: dodgerblue;
     transition: 200ms;
 }
 
 p a:hover,
 dt a:hover,
-dd a:hover {
+dd a:hover,
+li a:hover {
     opacity: 0.6;
 }
 
 p a:visited,
 dt a:visited,
-dd a:visited {
+dd a:visited,
+li a:visited {
     color: blueviolet;
 }
 
