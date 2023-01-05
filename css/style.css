@@ -228,7 +228,7 @@ span.red {
 }
 
 p a {
-    color: #005fff;
+    color: steelblue;
     transition: 200ms;
 }
 
@@ -237,11 +237,12 @@ p a:hover {
 }
 
 p a:visited {
-    color: #9057FF;
+    color: blueviolet;
 }
 
 dl {
-    width: min(20em, 50%);
+    /*width: min(20em, 50%);*/
+    width: 50%;
     margin-block: 0;
     padding: 0 1em 0 0.5em;
     float: left;
@@ -254,7 +255,7 @@ dl:last-child {
 
 dt {
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
 }
 
 dd {
