@@ -195,7 +195,8 @@ h1.unvisited {
 }
 
 body.visited {
-    background-color: cornsilk;
+    /*background-color: cornsilk;*/
+    background-color: ivory;
 }
 
 h1.visited {
