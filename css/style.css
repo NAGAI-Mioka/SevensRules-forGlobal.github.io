@@ -46,7 +46,7 @@ body.contents {
 
 /*ドロップダウンメニュー*/
 
-.ul_menuBar {
+ul.ul_menuBar {
     margin: 0;
     padding: 0 15px 0 15px;
     top: 50%;
@@ -54,7 +54,7 @@ body.contents {
     background-color: lightcoral;
 }
 
-.ul_menuBar li {
+ul.ul_menuBar li {
     width: 100%;
     list-style-type: none;
     display: inline-block;
@@ -76,33 +76,34 @@ ul.ul_menuBar li a {
 ul.ul_menuBar li a:hover {
     background-color: darkred;
     color: white;
+    opacity: 1;
 }
 
-.ul_menuBar ul {
+ul.ul_menuBar ul {
     width: 100%;
     padding: 0;
     position: absolute;
     display: none;
 }
 
-.ul_menuBar > li {
+ul.ul_menuBar > li {
     border-left: 1px solid white;
 }
-.ul_menuBar > li:last-child {
+ul.ul_menuBar > li:last-child {
     border-right: 1px solid white;
 }
 
-.ul_menuBar li li {
+ul.ul_menuBar li li {
     border-top: 1px solid white;
 }
 
-.ul_menuBar ul ul {
+ul.ul_menuBar ul ul {
     top: -1px;
     left: 100%;
     border-left: 1px solid white;
 }
 
-.ul_menuBar li.has_child::before {
+ul.ul_menuBar li.has_child::before {
     content: '';
     position: absolute;
     left: 5px;
@@ -114,7 +115,7 @@ ul.ul_menuBar li a:hover {
     transform: translateY(-50%) rotate(135deg);
 }
 
-.ul_menuBar li li.has_child::before {
+ul.ul_menuBar li li.has_child::before {
     content: '';
     position: absolute;
     left: 5px;
