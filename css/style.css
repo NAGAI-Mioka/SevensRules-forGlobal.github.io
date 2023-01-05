@@ -168,10 +168,10 @@ body.contents {
 }
 
 .iframe_child {
-    width: calc(100% / 0.6);
-    height: calc(100% / 0.6);
+    width: calc(100% / 0.7);
+    height: calc(100% / 0.7);
     transform-origin: 0 0;
-    transform: scale(0.6);
+    transform: scale(0.7);
     transition: 200ms;
     transition-property: border;
 }
