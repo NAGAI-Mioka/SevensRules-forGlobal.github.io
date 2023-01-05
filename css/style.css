@@ -73,7 +73,7 @@ ul.ul_menuBar li a {
     transition: 200ms;
 }
 
-.ul_menuBar a:hover {
+ul.ul_menuBar li a:hover {
     background-color: darkred;
     color: white;
 }
