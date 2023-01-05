@@ -227,16 +227,22 @@ span.red {
     color: crimson;
 }
 
-p a {
+p a,
+dt a,
+dd a {
     color: steelblue;
     transition: 200ms;
 }
 
-p a:hover {
+p a:hover,
+dt a:hover,
+dd a:hover {
     opacity: 0.6;
 }
 
-p a:visited {
+p a:visited,
+dt a:visited,
+dd a:visited {
     color: blueviolet;
 }
 
