@@ -130,7 +130,7 @@ body.contents {
 }
 
 .menu_li_open_parent {
-    background-color: steelblue;
+    background-color: cornflowerblue;
 }
 
 .menu_li_close {
@@ -230,7 +230,7 @@ span.red {
 p a,
 dt a,
 dd a {
-    color: steelblue;
+    color: dodgerblue;
     transition: 200ms;
 }
 
