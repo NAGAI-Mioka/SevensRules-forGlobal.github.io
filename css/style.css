@@ -61,7 +61,7 @@ body.contents {
     position: relative;
 }
 
-.ul_menuBar a {
+ul.ul_menuBar li a {
     height: 100%;
     line-height: 40px;
     text-align: center;
