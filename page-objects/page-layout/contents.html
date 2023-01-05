@@ -7,6 +7,12 @@
 
     <link rel="stylesheet" type="text/css"
         href="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/css/style.css">
+    <style>
+        div#adjacent,
+        div#blocked {
+            width: calc(50% - 3px);
+        }
+    </style>
 
     <script defer type="text/javascript"
         src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/js/jquery-3.6.2.min.js"></script>
@@ -22,15 +28,22 @@
 
 <body class="contents">
     <h1>場</h1>
-    <p>パスを3回以内に抑えつつ、手札を1枚ずつ交代で場に出します。</p>
-    <p>このとき、自分の手札を封鎖させずに、他プレイヤーの手札を封鎖することを目指します。</p>
-
-    <div class="div_ifch" id="adjacent">
-        <iframe class="iframe_child iframe_out"
-            src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-layout/page-adjacent/contents.html">
-            <p>このブラウザはインラインフレームに対応していません。</p>
-        </iframe>
+    <p>ゲームの進行中に<a
+            href="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-cards/contents.html"
+            target="iframe_main">カード</a>を並べていくスペースを「<strong>場</strong>」と呼びます。</p>
+    <p>場の<a href="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-cards/contents.html"
+            target="iframe_main">カード</a>は常に<strong><a
+                href="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-cards/page-suit/contents.html"
+                target="iframe_main">スート</a>ごと</strong>に、<strong><a
+                href="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-cards/page-number/contents.html"
+                target="iframe_main">数字</a>順</strong>になるよう、<strong>4行13列</strong>に並べます。</p>
+    <p>場のカードの並びによって、<strong><a
+                href="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-layout/page-blocked/contents.html"
+                target="iframe_main">封鎖</a></strong>が発生します。</p>
+    <div class="imgfig">
+        <img src="https://placehold.jp/150x150.png">
     </div>
+
     <div class="div_ifch" id="blocked">
         <iframe class="iframe_child iframe_out"
             src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-layout/page-blocked/contents.html">
