@@ -270,6 +270,8 @@ dt {
 
 dd {
     margin-inline-start: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 button {
