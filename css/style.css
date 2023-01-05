@@ -287,11 +287,18 @@ button:hover {
 }
 
 figure {
-    display: inline-block;
+    display: inline-flex;
+    flex-flow: column;
     text-align: center;
+    width:fit-content;
+    padding: 5px;
+    border: 1px solid gray;
+    background-color: white;
 }
 
 figcaption {
-    color: gray;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
     font-size: small;
+    text-align: center;
 }
