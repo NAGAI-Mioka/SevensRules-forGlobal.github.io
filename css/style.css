@@ -111,7 +111,6 @@ body.contents {
     border-top: 2px solid white;
     border-right: 2px solid white;
     transform: translateY(-50%) rotate(135deg);
-    z-index: -1;
 }
 
 .ul_menuBar li li.has_child::before {
@@ -124,7 +123,6 @@ body.contents {
     border-top: 2px solid white;
     border-right: 2px solid white;
     transform: translateY(-50%) rotate(45deg);
-    z-index: -1;
 }
 
 .menu_li_open {
@@ -140,21 +138,6 @@ body.contents {
 }
 
 /*子情報を表示するiframe*/
-
-/*
-.iframe_child {
-    --ifScale: 0.75;
-    width: calc(300px/var(--ifScale));
-    height: calc(200px/var(--ifScale));
-    transform-origin: 0 0;
-    transform: scale(var(--ifScale));
-    margin-right: calc(-300px*(1 - var(--ifScale)));
-    margin-bottom: calc(-200px*(1 - var(--ifScale)));
-    transition: 200ms;
-    transition-property: border, box-shadow;
-}
-*/
-
 .div_ifch {
     width: calc(25% - 3pt);
     height: calc(50% - 2pt);
