@@ -276,8 +276,9 @@ button:hover {
 
 div.column {
     border: 2px solid lightcoral;
-    border-radius: 50vh;
-    padding: 1em;
+    border-radius: 20px;
+    padding: 0em 1em;
+    margin-bottom: 1.5em;
 }
 
 div.column p {
