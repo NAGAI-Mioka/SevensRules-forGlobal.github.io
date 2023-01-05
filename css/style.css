@@ -177,11 +177,11 @@ body.contents {
 }
 
 .iframe_over {
-    border: 3px solid red;
+    border: 3px solid dodgerblue;
 }
 
 .iframe_out {
-    border: 3px solid grey;
+    border: 3px solid lightgrey;
 }
 
 /*未読・既読ページ（見出しとページ背景）*/
@@ -217,31 +217,15 @@ h1 {
     box-sizing: border-box;
 }
 
-
 strong {
     color:rgb(20, 20, 20);
     background: linear-gradient(transparent 60%, rgba(240, 128, 128, 0.5) 0%);
-    /*
-    text-decoration: underline;
-    text-decoration-thickness: 0.5em;
-    text-decoration-color: rgba(240, 128, 128, 0.5);
-    text-underline-offset: -0.3em;
-    text-decoration-skip-ink: none;
-    */
 }
 
-/*
-strong::before {
-    content: "";
-    width: 100%;
-    height: 30%;
-    position: absolute;
-    top: 70%;
-    left: 0;
-    background: rgba(240, 128, 128, 0.5);
-    z-index: -1;
+span.red {
+    color: crimson;
 }
-*/
+
 p a {
     color: #005fff;
     transition: 200ms;
