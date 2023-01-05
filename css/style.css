@@ -285,3 +285,12 @@ button:hover {
     color: white;
     background-color: rgb(50, 50, 50);
 }
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    color: gray;
+    font-size: small;
+}
