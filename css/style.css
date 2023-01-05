@@ -168,10 +168,10 @@ body.contents {
 }
 
 .iframe_child {
-    width: calc(100% / 0.75);
-    height: calc(100% / 0.75);
+    width: calc(100% / 0.6);
+    height: calc(100% / 0.6);
     transform-origin: 0 0;
-    transform: scale(0.75);
+    transform: scale(0.6);
     transition: 200ms;
     transition-property: border;
 }
@@ -219,9 +219,13 @@ h1 {
 
 strong {
     color:rgb(20, 20, 20);
-    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5em;
+    text-decoration-color: rgba(240, 128, 128, 0.5);
+    text-underline-offset: -0.3em;
+    text-decoration-skip-ink: none;
 }
-
+/*
 strong::before {
     content: "";
     width: 100%;
@@ -232,7 +236,7 @@ strong::before {
     background: rgba(240, 128, 128, 0.5);
     z-index: -1;
 }
-
+*/
 p a {
     color: #005fff;
     transition: 200ms;
