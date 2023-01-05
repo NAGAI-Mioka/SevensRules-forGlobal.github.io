@@ -274,6 +274,16 @@ button:hover {
     background-color: rgb(40, 40, 40);
 }
 
+div.column {
+    border: 2px solid lightcoral;
+    border-radius: 50vh;
+    padding: 1em;
+}
+
+div.column p {
+    margin-inline-start: 1.5em;
+}
+
 div.imgfig {
     text-align: center;
     width: 100%;
