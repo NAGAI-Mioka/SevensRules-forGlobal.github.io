@@ -59,6 +59,7 @@ ul.ul_menuBar li {
     list-style-type: none;
     display: inline-block;
     position: relative;
+    margin-block-end: 0;
 }
 
 ul.ul_menuBar li a {
@@ -253,6 +254,10 @@ dt {
 dd {
     margin-inline-start: 1.5em;
     margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+li {
     margin-block-end: 1em;
 }
 
