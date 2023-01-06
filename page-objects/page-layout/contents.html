@@ -11,6 +11,7 @@
         div#blocked {
             width: calc(50% - 3px);
             height: 60vh;
+            display: inline-block;
         }
     </style>
 
@@ -28,7 +29,7 @@
 
 <body class="contents">
     <h1>場</h1>
-    <div style="display: inline-block; width: calc(50% - 3px); vertical-align: top;">
+    <div style="display: inline-block; vertical-align: top;">
         <p>ゲームの進行中に<a
                 href="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-cards/contents.html"
                 target="iframe_main">カード</a>を並べていくスペースを「<strong>場</strong>」と呼びます。</p>
@@ -43,14 +44,16 @@
                     target="iframe_main">封鎖</a></strong>が発生します。</p>
 
     </div>
-    <div class="imgfig" style="display: inline-block; width:calc(50% - 3px);">
+    <div class="imgfig" style="display: inline-block;">
         <img src="https://placehold.jp/150x150.png">
     </div>
-    <div class="div_ifch" id="blocked">
-        <iframe class="iframe_child iframe_out"
-            src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-layout/page-blocked/contents.html">
-            <p>このブラウザはインラインフレームに対応していません。</p>
-        </iframe>
+    <div style="text-align: center;">
+        <div class="div_ifch" id="blocked">
+            <iframe class="iframe_child iframe_out"
+                src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-objects/page-layout/page-blocked/contents.html">
+                <p>このブラウザはインラインフレームに対応していません。</p>
+            </iframe>
+        </div>
     </div>
 
 </body>
