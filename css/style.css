@@ -38,6 +38,7 @@ div#top {
 body.contents {
     padding: 10pt 20pt 10pt 20pt;
     height: fit-content;
+    min-height: 100%;
 }
 
 #iframe_main {
@@ -145,7 +146,7 @@ ul.ul_menuBar li li.has_child::before {
 /*子情報を表示するiframe*/
 .div_ifch {
     width: calc(25% - 3pt);
-    height: calc(50% - 2pt);
+    height: 47vh;
     display: inline-block;
     vertical-align: middle;
     margin: 0;
