@@ -32,10 +32,12 @@ div#top {
 
 #div_contents {
     flex-grow: 1;
+    height: 100%;
 }
 
 body.contents {
     padding: 10pt 20pt 10pt 20pt;
+    height: fit-content;
 }
 
 #iframe_main {
