@@ -146,10 +146,10 @@ ul.ul_menuBar li li.has_child::before {
 /*子情報を表示するiframe*/
 .div_ifch {
     width: calc(25% - 3pt);
-    height: 47vh;
+    height: 45vh;
     display: inline-block;
     vertical-align: middle;
-    margin: 0;
+    margin: 0 0 1.5vh 0;
     overflow: hidden;
     transition: 200ms;
     box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
