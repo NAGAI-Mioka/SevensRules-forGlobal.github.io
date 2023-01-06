@@ -145,6 +145,7 @@ ul.ul_menuBar li li.has_child::before {
     width: calc(25% - 3pt);
     height: calc(50% - 2pt);
     display: inline-block;
+    vertical-align: middle;
     margin: 0;
     overflow: hidden;
     transition: 200ms;
@@ -282,6 +283,7 @@ div.column p {
 
 div.imgfig {
     text-align: center;
+    vertical-align: middle;
     width: 100%;
 }
 
