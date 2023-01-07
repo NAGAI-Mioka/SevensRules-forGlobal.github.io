@@ -294,6 +294,12 @@ dt {
     font-size: 4vmin;
     font-weight: bold;
 }
+dt.flag {
+    padding-left: 5vmin;
+    background-image: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_flag.svg");
+    background-repeat: no-repeat;
+    background-size: 4vmin;
+}
 
 dd {
     margin-inline-start: 1.5em;
