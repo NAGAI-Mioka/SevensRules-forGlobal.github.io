@@ -24,7 +24,7 @@ $(document).ready(function () {
         function () {
             href = $(this).attr("href");
             $(this).css("position", "relative");
-            $(this).append('<div id="tooltip"><iframe src="' + href + '"></iframe></div>')
+            $(this).append('<div id="tooltip"><iframe src="' + href + '" sandbox=""></iframe></div>')
         },
         function () {
             $("#tooltip").remove();
