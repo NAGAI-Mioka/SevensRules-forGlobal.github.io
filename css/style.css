@@ -202,17 +202,22 @@ h1.visited {
 
 /*ツールチップ*/
 #tooltip {
-    position:absolute;
+    width: 300px;
+    height: 200px;
+    position: absolute;
     display: inline-block;
-    top:50px;
+    top: 50px;
     left: 50px;
     opacity: 0.8;
+    transition: 200ms;
 }
 
  #tooltip iframe {
-    width: 600px;
-    height: 400px;
+    width: calc(100% / 0.5);
+    height: calc(100% / 0.5);
+    transform-origin: top left;
     transform: scale(0.5);
+    border: 2px solid lightgray;
  }
 
 /*要素の単なるデザイン*/
