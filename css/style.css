@@ -241,14 +241,14 @@ h1.visited {
  }
 
 /*要素の単なるデザイン*/
+* {
+    color: rgb(40, 40, 40);
+    box-sizing: border-box;
+}
+
 h1 {
     line-height: 10vmin;
     font-size: 8vmin;
-}
-
-* {
-    color:rgb(40, 40, 40);
-    box-sizing: border-box;
 }
 
 p,
