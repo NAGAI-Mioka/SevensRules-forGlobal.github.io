@@ -208,11 +208,11 @@ h1.visited {
     display: inline-block;
     top: 80%;
     left: 50%;
-    transform: translateX(-50%);
-    margin-top: 15px;
+    transform: translate(-50%, 1em);
     padding: 8px;
     background-color: lightcoral;
     border-radius: 15px;
+    opacity: 0.85;
     z-index: 10;
 }
 
@@ -261,7 +261,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 a:visited {
