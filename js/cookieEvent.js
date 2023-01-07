@@ -7,15 +7,6 @@ $(window).on("load", function () {
     } else {
         $("body, h1").removeClass("visited").addClass("unvisited");
     }
-
-    // iframe_mainに表示されているとき、ドロップダウンメニューを避ける
-    /*
-    if (window.parent === window.top) {
-        $("body.contents").css("padding-top", "25px");
-    } else {
-        $("body.contents").css("padding-top", "0px");
-    }
-    */
 });
 
 // iframe_mainの表示から外れたとき
@@ -25,4 +16,16 @@ $(window).on("unload", function () {
             Cookies.set("visited-" + window.location.pathname, "true");
         }
     }
+});
+
+$(document).ready(function () {
+    $("p a").hover(
+        function () {
+            console.log("iframe ToolTip!");
+            $(this).append('<div id="tooltip"><iframe src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-game/contents.html"></iframe></div>')
+        },
+        function () {
+            $("#tooltip").remove();
+        }
+    );
 });
