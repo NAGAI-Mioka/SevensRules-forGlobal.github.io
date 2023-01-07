@@ -233,6 +233,7 @@ h1.visited {
 }
 
  #tooltip iframe {
+    pointer-events: none;
     width: calc(100% / 0.75);
     height: calc(100% / 0.75);
     transform-origin: top left;
