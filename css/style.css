@@ -277,12 +277,12 @@ span.red {
 }
 
 a {
-    color: dodgerblue;
+    color: royalblue;
     transition: 200ms;
 }
 
 a:visited {
-    color: blueviolet;
+    color: darkorchid;
 }
 
 dl {
