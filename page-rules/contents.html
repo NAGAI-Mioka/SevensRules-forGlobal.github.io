@@ -7,6 +7,14 @@
 
     <link rel="stylesheet" type="text/css"
         href="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/css/style.css">
+    <style>
+        div#turn,
+        div#blocked,
+        div#adjacent {
+            width: calc((100% / 3) - 3px);
+            height: 70vh;
+        }
+    </style>
 
     <script defer type="text/javascript"
         src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/js/jquery-3.6.2.min.js"></script>
@@ -22,9 +30,6 @@
 
 <body class="contents">
     <h1>基本のルール</h1>
-    <p>パスを3回以内に抑えつつ、手札を1枚ずつ交代で場に出します。</p>
-    <p>このとき、自分の手札を封鎖させずに、他プレイヤーの手札を封鎖することを目指します。</p>
-
     <div class="div_ifch" id="turn">
         <iframe class="iframe_child iframe_out"
             src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-rules/page-turn/contents.html">
