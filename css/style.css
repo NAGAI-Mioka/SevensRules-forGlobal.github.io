@@ -223,7 +223,7 @@ h1.visited {
     position: absolute;
     bottom: 99%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
 }
 
  #tooltip iframe {
