@@ -66,6 +66,7 @@ ul.ul_menuBar li {
     display: inline-block;
     position: relative;
     margin-block-end: 0;
+    font-size: medium;
 }
 
 ul.ul_menuBar li a {
@@ -74,7 +75,6 @@ ul.ul_menuBar li a {
     text-align: center;
     color: rgb(40, 40, 40);
     text-decoration: none;
-    font-size: medium;
     font-weight: bold;
     display: block;
     pointer-events: auto;
@@ -255,12 +255,12 @@ p,
 dd,
 li,
 figcaption {
-    font-size: 5vmin;
+    font-size: 3vmin;
 }
 
 h3,
-dd {
-    font-size: 7vmin;
+dt {
+    font-size: 5vmin;
 }
 
 strong {
