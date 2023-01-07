@@ -65,7 +65,10 @@ ul.ul_menuBar li {
     list-style-type: none;
     display: inline-block;
     position: relative;
-    margin-block-end: 0;
+    margin: 0;
+    margin-block: 0;
+    padding: 0;
+    border: none;
     font-size: medium;
 }
 
@@ -310,7 +313,9 @@ dd {
 }
 
 li {
-    margin-block-end: 1em;
+    margin-block-end: 2em;
+    padding-top: 1em;
+    border-top: 2pt dashed lightcoral;
 }
 
 button {
