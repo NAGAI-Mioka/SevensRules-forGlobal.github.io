@@ -74,6 +74,7 @@ ul.ul_menuBar li a {
     text-align: center;
     color: rgb(40, 40, 40);
     text-decoration: none;
+    font-size: medium;
     font-weight: bold;
     display: block;
     pointer-events: auto;
@@ -163,10 +164,10 @@ ul.ul_menuBar li li.has_child::before {
 }
 
 .iframe_child {
-    width: calc(100% / 1);
-    height: calc(100% / 1);
+    width: calc(100% / 0.7);
+    height: calc(100% / 0.7);
     transform-origin: 0 0;
-    transform: scale(1);
+    transform: scale(0.7);
     transition: 200ms;
     transition-property: border;
 }
@@ -250,6 +251,18 @@ h1 {
     box-sizing: border-box;
 }
 
+p,
+dd,
+li,
+figcaption {
+    font-size: 5vmin;
+}
+
+h3,
+dd {
+    font-size: 7vmin;
+}
+
 strong {
     color:rgb(15, 15, 15);
     background: linear-gradient(transparent 65%, rgba(240, 128, 128, 0.4) 0%);
@@ -279,7 +292,6 @@ dl {
 
 dt {
     font-weight: bold;
-    font-size: larger;
 }
 
 dd {
@@ -348,7 +360,6 @@ figure {
 figcaption {
     background-color: rgb(40, 40, 40);
     color: white;
-    font-size: medium;
     font-weight: bold;
     text-align: center;
 }
