@@ -200,6 +200,17 @@ h1.visited {
     background-size: 50px;
 }
 
+/*ツールチップ*/
+#tooltip {
+    position:absolute;
+    opacity: 0.5;
+}
+
+ #tooltip iframe {
+    width: 300px;
+    height: 200px;
+ }
+
 /*要素の単なるデザイン*/
 h1 {
     line-height: 50px;
