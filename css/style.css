@@ -203,12 +203,16 @@ h1.visited {
 /*ツールチップ*/
 #tooltip {
     position:absolute;
-    opacity: 0.5;
+    display: inline-block;
+    top:50px;
+    left: 50px;
+    opacity: 0.8;
 }
 
  #tooltip iframe {
-    width: 300px;
-    height: 200px;
+    width: 600px;
+    height: 400px;
+    transform: scale(0.5);
  }
 
 /*要素の単なるデザイン*/
