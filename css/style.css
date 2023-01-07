@@ -210,7 +210,8 @@ h1.visited {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 15px;
-    background-color: aliceblue;
+    padding: 8px;
+    background-color: lightcoral;
     z-index: 10;
 }
 
@@ -219,7 +220,7 @@ h1.visited {
     width: 0;
     height: 0;
     border: 10px solid transparent;
-    border-bottom: 12px solid aliceblue;
+    border-bottom: 12px solid lightcoral;
     position: absolute;
     bottom: 99%;
     left: 50%;
@@ -231,7 +232,7 @@ h1.visited {
     height: calc(100% / 0.5);
     transform-origin: top left;
     transform: scale(0.5);
-    border: 2px solid lightgray;
+    border: none;
  }
 
 /*要素の単なるデザイン*/
@@ -259,7 +260,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 a:visited {

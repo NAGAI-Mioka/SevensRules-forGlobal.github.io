@@ -23,7 +23,6 @@ $(document).ready(function () {
     $("p a").hover(
         function () {
             href = $(this).attr("href");
-            console.log("iframe ToolTip!");
             $(this).css("position", "relative");
             $(this).append('<div id="tooltip"><iframe src="' + href + '"></iframe></div>')
         },
