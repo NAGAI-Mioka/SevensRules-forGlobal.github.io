@@ -260,10 +260,6 @@ a {
     transition: 200ms;
 }
 
-a:hover {
-    color: rgba(0, 0, 0, 0.6);
-}
-
 a:visited {
     color: blueviolet;
 }
