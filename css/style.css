@@ -299,10 +299,11 @@ dt {
     font-weight: bold;
 }
 dt.flag {
-    padding-left: 5vmin;
+    font-size: 3vmin;
+    padding-left: 4vmin;
     background-image: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_flag.svg");
     background-repeat: no-repeat;
-    background-size: 4vmin;
+    background-size: 3vmin;
     background-position: left center;
 }
 
