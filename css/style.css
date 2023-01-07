@@ -164,10 +164,10 @@ ul.ul_menuBar li li.has_child::before {
 }
 
 .iframe_child {
-    width: calc(100% / 0.7);
-    height: calc(100% / 0.7);
+    width: calc(100% / 0.75);
+    height: calc(100% / 0.75);
     transform-origin: 0 0;
-    transform: scale(0.7);
+    transform: scale(0.75);
     transition: 200ms;
     transition-property: border;
 }
@@ -233,10 +233,10 @@ h1.visited {
 }
 
  #tooltip iframe {
-    width: calc(100% / 0.5);
-    height: calc(100% / 0.5);
+    width: calc(100% / 0.75);
+    height: calc(100% / 0.75);
     transform-origin: top left;
-    transform: scale(0.5);
+    transform: scale(0.75);
     border: none;
  }
 
