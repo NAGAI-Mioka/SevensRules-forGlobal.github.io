@@ -258,9 +258,8 @@ figcaption {
     font-size: 3vmin;
 }
 
-h3,
-dt {
-    font-size: 4vmin;
+h3 {
+    font-size: 5vmin;
 }
 
 strong {
@@ -291,6 +290,7 @@ dl {
 }
 
 dt {
+    font-size: 4vmin;
     font-weight: bold;
 }
 
