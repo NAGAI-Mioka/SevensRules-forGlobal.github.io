@@ -7,6 +7,21 @@ $(window).on("load", function () {
     } else {
         $("body, h1").removeClass("visited").addClass("unvisited");
     }
+
+    // ツールチップiframeを表示する
+    if (window.parent === window.top) {
+        $("p a").hover(
+            function () {
+                href = $(this).attr("href");
+                $(this).css("position", "relative");
+                $(this).append('<div id="tooltip"><iframe src="' + href + '"></iframe></div>')
+            },
+            function () {
+                $("#tooltip").remove();
+                $(this).css("position", "static");
+            }
+        );
+    }
 });
 
 // iframe_mainの表示から外れたとき
@@ -18,17 +33,3 @@ $(window).on("unload", function () {
     }
 });
 
-// ツールチップiframeを表示する
-$(document).ready(function () {
-    $("p a").hover(
-        function () {
-            href = $(this).attr("href");
-            $(this).css("position", "relative");
-            $(this).append('<div id="tooltip"><iframe src="' + href + '" sandbox=""></iframe></div>')
-        },
-        function () {
-            $("#tooltip").remove();
-            $(this).css("position", "static");
-        }
-    );
-});
