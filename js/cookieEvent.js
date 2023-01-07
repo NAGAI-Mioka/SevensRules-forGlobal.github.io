@@ -18,12 +18,14 @@ $(window).on("unload", function () {
     }
 });
 
+// ツールチップiframeを表示する
 $(document).ready(function () {
     $("p a").hover(
         function () {
+            href = $(this).attr("href");
             console.log("iframe ToolTip!");
             $(this).css("position", "relative");
-            $(this).append('<div id="tooltip"><iframe src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-game/contents.html"></iframe></div>')
+            $(this).append('<div id="tooltip"><iframe src="' + href + '"></iframe></div>')
         },
         function () {
             $("#tooltip").remove();
