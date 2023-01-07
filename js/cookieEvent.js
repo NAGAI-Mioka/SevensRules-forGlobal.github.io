@@ -22,10 +22,12 @@ $(document).ready(function () {
     $("p a").hover(
         function () {
             console.log("iframe ToolTip!");
+            $(this).css("position", "relative");
             $(this).append('<div id="tooltip"><iframe src="https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/page-game/contents.html"></iframe></div>')
         },
         function () {
             $("#tooltip").remove();
+            $(this).css("position", "static");
         }
     );
 });
