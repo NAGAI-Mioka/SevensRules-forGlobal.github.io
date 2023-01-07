@@ -202,6 +202,7 @@ h1.visited {
     background-image: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_visited.svg");
     background-repeat: no-repeat;
     background-size: 10vmin;
+    background-position: left center;
 }
 
 /*ツールチップ*/
@@ -299,6 +300,7 @@ dt.flag {
     background-image: url("https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/img/icon_flag.svg");
     background-repeat: no-repeat;
     background-size: 4vmin;
+    background-position: left center;
 }
 
 dd {
