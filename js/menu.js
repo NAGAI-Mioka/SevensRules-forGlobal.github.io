@@ -11,6 +11,14 @@ $(document).ready(function () {
         iframe_main.contentWindow.location.href = "https://nagai-mioka.github.io/SevensRules-forGlobal.github.io/contents.html";
     });
 
+    // ページ更新でクッキー全削除
+    const cks = document.cookie.split(';')
+    for (let i = 0; i < cks.length; i++) {
+        const ck = cks[i].trim();
+        const content = ck.split('=');
+        Cookies.remove(content[0]);
+    }
+
     // ドロップダウンメニューに関する処理
     $(iframe_main).on("load", function () {
         $(".ul_menuBar a").each(function (i, elem) {
@@ -52,4 +60,6 @@ $(document).ready(function () {
         $(".ul_menuBar li li.menu_li_open_parent").parent().show();
         $(".ul_menuBar li li.menu_li_open").parent().show();
     });
+
+
 });
