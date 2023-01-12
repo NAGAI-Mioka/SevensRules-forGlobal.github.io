@@ -22,6 +22,8 @@ $(document).ready(function () {
     // ドロップダウンメニューに関する処理
     $(iframe_main).on("load", function () {
         $(".ul_menuBar a").each(function (i, elem) {
+            console.log($(elem).attr("href"));
+            console.log(iframe_main.contentWindow.location.href);
             if ($(elem).attr("href") === iframe_main.contentWindow.location.href) {
                 // 現在iframe_mainで開いているページに対応するメニューの項目について
                 $(elem).parent().removeClass("menu_li_close menu_li_open_parent").addClass("menu_li_open");
