@@ -11,7 +11,7 @@ $(window).on("load", function () {
 
     // ツールチップiframeを表示する
     if (window.parent === window.top) {
-        $("p a, dt a, dd a, li a").not("ul.ul_menuBar a").hover(
+        $("a").not("ul.ul_menuBar a").hover(
             function () {
                 href = $(this).attr("href");
                 $(this).css("position", "relative");
