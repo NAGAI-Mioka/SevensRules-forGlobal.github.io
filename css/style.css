@@ -292,6 +292,7 @@ dl {
     padding: 0 1.5em 0 0.5em;
     float: left;
     border-left: 5px solid lightcoral;
+    background-color: snow;
 }
 
 dt {
