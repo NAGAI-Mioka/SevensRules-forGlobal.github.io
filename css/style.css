@@ -376,6 +376,10 @@ figure {
     height: auto;
 }
 
+.imgfig img.fourthree {
+    width: 400px;
+}
+
 figcaption {
     background-color: rgb(40, 40, 40);
     color: white;
