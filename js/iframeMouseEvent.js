@@ -11,6 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // iframe_childの内部をクリックした時
         ifch[i].contentWindow.addEventListener("click", (e) => {
             if ($(overIframe).attr("src") != null) {
+                var user = window.top.location.search;
+                var attr = "click";
+                var name = window.document.title;
+                var loc = window.location.href;
+
+                pushJsonLog(user, attr, name, loc);
+
                 win_ifmain.location.href = $(overIframe).attr("src");
             }
         });
@@ -29,3 +36,42 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+function pushJsonLog(user, attr, name, loc) {
+    var now = new Date();
+    var date = {
+        "year": now.getFullYear(),
+        "month": now.getMonth() + 1,
+        "date": now.getDate(),
+        "hours": now.getHours(),
+        "minutes": now.getMinutes(),
+        "seconds": now.getSeconds(),
+        "milli": now.getMilliseconds()
+    }
+    var logJson = {
+        "user": user,
+        "attr": attr,
+        "name": name,
+        "location": loc,
+        "date": date
+    };
+    logSubmit(logJson);
+}
+
+function logSubmit(eventLog) {
+    fetch("http://172.21.214.123/SevensRules-forGlobal.github.io/php/writeLogFile.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        //body: JSON.stringify(accessLog)
+        body: JSON.stringify(eventLog)
+    })
+        .then(response => {
+            //response.text();
+            console.log("通信成功" + response);
+        })
+        .then(res => {
+            console.log(res);
+        })
+        .catch(error => {
+            console.log(error);
+        })
+}
