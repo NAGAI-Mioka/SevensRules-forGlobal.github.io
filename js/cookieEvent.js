@@ -23,6 +23,12 @@ $(window).on("load", function () {
             }
         );
     }
+
+    // 子iframeとして読み込まれたとき
+    if (window.parent !== window.top) {
+        // ドキュメント全体のカーソル表示を指にする
+        window.document.body.style.cursor = "pointer";
+    }
 });
 
 // iframe_mainの表示から外れたとき
