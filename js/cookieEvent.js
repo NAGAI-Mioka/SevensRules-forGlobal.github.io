@@ -29,6 +29,15 @@ $(window).on("load", function () {
         // ドキュメント全体のカーソル表示を指にする
         window.document.body.style.cursor = "pointer";
     }
+
+    var win_ifmain = window.top.document.getElementById("iframe_main").contentWindow; // iframe_mainのウィンドウを取得
+    $("a").on("click", function (event) {
+        event.preventDefault();
+        // index.htmlもしくはiframe_mainの中に表示されているとき
+        if (window.parent === window.top) {
+            win_ifmain.location.href = $(this).attr("href");
+        }
+    });
 });
 
 // iframe_mainの表示から外れたとき
